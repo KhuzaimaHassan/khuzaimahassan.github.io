@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/font/simple-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Update EmailJS version -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        // Initialize EmailJS with your user ID
+        emailjs.init("U4_qxAJ-5Pc_EEiAk");
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">Portfolio</div>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-flex">
+            <div class="hero-text">
+              <h1>Hi, I'm <span class="highlight">Khuzaima Hassan</span></h1>
+              <h2>
+                I'm a <span class="typed-text"></span
+                ><span class="cursor">&nbsp;</span>
+              </h2>
+              <p>Data Scientist | Data Analyst | Python Programmer</p>
+              <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+              </div>
+              <div class="social-icons">
+                <a href="https://github.com/KhuzaimaHassan" class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/khuzaima-hassan-2004mkh"
+                  class="social-icon"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://leetcode.com/u/Khuzaima_Hassan/" class="social-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor">
+                    <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zm4.709-4.92H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/>
+                  </svg>
+                </a>
+              
+                <a href="https://www.kaggle.com/khuzaimahassan" class="social-icon">
+                <i class="fab fa-kaggle"></i>
+                </a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img src="images/Khuzaima_DT-22302.jpg" alt="Khuzaima Hassan" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <div class="underline"></div>
+        </div>
+        <!-- <div class="about-content">
+          <div class="about-img">
+            <img src="images/Khuzaima_DT-22302.jpg" alt="Profile Picture" />
+          </div> -->
+          <div class="about-text">
+            <!-- <h3>Hello! I’m <span class="highlight">Khuzaima Hassan</span></h3> -->
+            <p>
+              As a Data Science enthusiast and Computer Science student at NED
+              University, I am dedicated to mastering the art and science of
+              data analysis and management.Driven by the desire to apply
+              data-driven insights to solve real-world problems, I am actively
+              seeking opportunities to apply my skills in data analysis, machine
+              learning, and data visualization in practical settings. My goal is
+              to contribute to innovative projects that require critical
+              thinking and analytical prowess.
+            </p>
+            <p>
+              I am keen on connecting with the data science community to share
+              insights, discuss industry trends, and explore collaborative
+              opportunities. If you’re passionate about data science and its
+              potential to drive change, I’d love to connect and learn from your
+              experiences.
+            </p>
+
+            <div class="skills">
+              <h3>My Skills</h3>
+              <div class="skill-bars">
+                <div class="skill">
+                  <span class="skill-name">Python</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%">90%</div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span class="skill-name">SQL</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%">85%</div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span class="skill-name">Exploartory Data Analysis</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%">80%</div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span class="skill-name">Machine Learning</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%">75%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="CV-Khuzaima.pdf" class="btn btn-primary">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Services</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Data Analysis</h3>
+            <p>
+              Comprehensive data analysis using Python, SQL, and statistical
+              methods to extract actionable insights and drive informed
+              decision-making.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Machine Learning</h3>
+            <p>
+              Implementation of machine learning models and algorithms to solve
+              complex problems and generate predictive insights from your data.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Data Visualization</h3>
+            <p>
+              Creation of interactive and informative visualizations that
+              communicate complex data stories clearly using tools like
+              Matplotlib, Seaborn, and Plotly.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Database Management</h3>
+            <p>
+              Efficient database design, management, and optimization with SQL
+              to ensure secure and fast data storage and retrieval for your
+              applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Recent Projects</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="data">Data Analysis</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="vis">Visualization</button>
+        </div>
+        <div class="project-grid">
+          <div class="project-card" data-category="data">
+            <div class="project-img">
+              <img
+                src="https://via.placeholder.com/600x400?text=EDA+Project"
+                alt="Exploratory Data Analysis"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Sales Data Analysis</h3>
+              <p>
+                Exploratory analysis of e-commerce sales data with statistical
+                insights and visualizations for business recommendations.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-small">View Project</a>
+                <a href="#" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="ml">
+            <div class="project-img">
+              <img
+                src="https://via.placeholder.com/600x400?text=Machine+Learning"
+                alt="Machine Learning Project"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Customer Churn Prediction</h3>
+              <p>
+                A machine learning model to predict customer churn using
+                historical behavior and engagement metrics.
+              </p>
+              <div class="project-tags">
+                <span>Scikit-learn</span>
+                <span>TensorFlow</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-small">View Project</a>
+                <a href="#" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="vis">
+            <div class="project-img">
+              <img
+                src="https://via.placeholder.com/600x400?text=Data+Visualization"
+                alt="Data Visualization"
+              />
+            </div>
+            <div class="project-content">
+              <h3>COVID-19 Data Dashboard</h3>
+              <p>
+                Interactive dashboard visualizing COVID-19 trends and patterns
+                with filterable parameters and geographic mapping.
+              </p>
+              <div class="project-tags">
+                <span>Plotly</span>
+                <span>Dash</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-small">View Project</a>
+                <a href="#" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="data">
+            <div class="project-img">
+              <img
+                src="https://via.placeholder.com/600x400?text=SQL+Analysis"
+                alt="SQL Project"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Database Analytics Pipeline</h3>
+              <p>
+                SQL-based ETL pipeline for extracting, transforming, and
+                analyzing business data from multiple sources.
+              </p>
+              <div class="project-tags">
+                <span>SQL</span>
+                <span>PostgreSQL</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-small">View Project</a>
+                <a href="#" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>
+              Feel free to reach out to me for any inquiries or project
+              collaborations. I'm always open to discussing new opportunities.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Karachi, Pakistan</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>khuzaimahassan52@gmail.com</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+923213937589</p>
+              </div>
+            </div>
+            <div class="social-icons">
+              <a href="https://github.com/KhuzaimaHassan" class="social-icon"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/khuzaima-hassan-2004mkh"
+                class="social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+
+              <a href="https://leetcode.com/u/Khuzaima_Hassan/" class="social-icon">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor">
+               <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zm4.709-4.92H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/>
+               </svg>
+              </a>
+              <a href="https://www.kaggle.com/khuzaimahassan" class="social-icon">
+                <i class="fab fa-kaggle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send Me a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Khuzaima Hassan. All Rights Reserved.</p>
+          <div class="back-to-top">
+            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
