@@ -172,12 +172,15 @@ header {
 }
 
 /* Hero Section */
+/* Hero Section - modify this */
 .hero {
-  height: 100vh;
+  min-height: 100vh; /* Change from height to min-height */
+  height: auto;
   display: flex;
   align-items: center;
   background-color: var(--light-color);
   margin-top: 60px;
+  padding: 20px 0; /* Add some padding */
 }
 
 .hero-content {
@@ -235,6 +238,8 @@ header {
   border-radius: 50%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border: 5px solid white;
+  z-index: 10; /* Add this to ensure image stays above other elements */
+  position: relative; /* Add this for better positioning */
 }
 
 /* Media query for responsive hero */
@@ -242,6 +247,7 @@ header {
   .hero-flex {
     flex-direction: column-reverse;
     text-align: center;
+    padding-top: 80px; /* Add this to create more space at the top */
   }
 
   .hero-text {
@@ -257,6 +263,14 @@ header {
 @media (max-width: 576px) {
   .hero-image img {
     max-width: 200px;
+    margin-top: 60px; /* Add this to create space for the header */
+  }
+
+  /* Add this to adjust the overall hero height */
+  .hero {
+    min-height: 100vh; /* Change from fixed height to minimum height */
+    height: auto; /* Allow it to expand if needed */
+    padding: 100px 0 40px; /* Add padding top and bottom */
   }
 }
 .social-icons {
