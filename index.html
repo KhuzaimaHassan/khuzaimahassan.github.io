@@ -40,7 +40,7 @@
     <header>
       <div class="container">
         <nav class="navbar">
-          <div class="logo">Portfolio</div>
+          <div class="logo"><a href="#home" style="color: inherit; text-decoration: none;">Portfolio</a></div>
           <ul class="nav-menu">
             <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
             <li class="nav-item">
@@ -75,7 +75,7 @@
                 I'm a <span class="typed-text"></span
                 ><span class="cursor">&nbsp;</span>
               </h2>
-              <p>Data Scientist | Data Analyst | Python Programmer</p>
+              <p>ML Engineer | Data Engineer | Python Programmer</p>
               <div class="hero-btns">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -101,7 +101,7 @@
               </div>
             </div>
             <div class="hero-image">
-              <img src="Khuzaima_DT-22302.jpg" alt="Khuzaima Hassan" />
+              <img src="pic/profile.png" alt="Khuzaima Hassan" />
             </div>
           </div>
         </div>
@@ -120,54 +120,318 @@
           <div class="about-text">
             <!-- <h3>Hello! I’m <span class="highlight">Khuzaima Hassan</span></h3> -->
             <p>
-              As a Data Science enthusiast and Computer Science student at NED
-              University, I am dedicated to mastering the art and science of
-              data analysis and management.Driven by the desire to apply
-              data-driven insights to solve real-world problems, I am actively
-              seeking opportunities to apply my skills in data analysis, machine
-              learning, and data visualization in practical settings. My goal is
-              to contribute to innovative projects that require critical
-              thinking and analytical prowess.
+              I am a Computer Science Senior at NED University, deeply committed to the intersection of data science and intelligent automation. My journey is fueled by a passion for transforming raw data into actionable insights and building end-to-end systems that solve real world problems.
+
+              With a strong foundation in Python and SQL, I specialize in designing and deploying machine learning models, with a growing focus on MLOps and Agentic AI. My technical experience ranges from building sophisticated forecasting models like the Pearls AQI Predictor using GitHub Actions and Hopsworks to developing intelligent telehealth solutions like TeleTabib.
             </p>
             <p>
-              I am keen on connecting with the data science community to share
-              insights, discuss industry trends, and explore collaborative
-              opportunities. If you’re passionate about data science and its
-              potential to drive change, I’d love to connect and learn from your
-              experiences.
+              Currently, I am looking to collaborate on innovative projects that push the boundaries of Data Engineering and Artificial Intelligence. If you're looking for a developer who is as comfortable with a complex dataset as they are with a deployment pipeline, let’s connect!
             </p>
 
             <div class="skills">
               <h3>My Skills</h3>
               <div class="skill-bars">
                 <div class="skill">
-                  <span class="skill-name">Python</span>
+                  <span class="skill-name">Python (Data Science & Automation)</span>
                   <div class="skill-bar">
                     <div class="skill-level" style="width: 90%">90%</div>
                   </div>
                 </div>
                 <div class="skill">
-                  <span class="skill-name">SQL</span>
+                  <span class="skill-name">SQL & Data Warehousing</span>
                   <div class="skill-bar">
                     <div class="skill-level" style="width: 85%">85%</div>
                   </div>
                 </div>
                 <div class="skill">
-                  <span class="skill-name">Exploartory Data Analysis</span>
+                  <span class="skill-name">Machine Learning (LSTMs & Scikit-Learn)</span>
                   <div class="skill-bar">
                     <div class="skill-level" style="width: 80%">80%</div>
                   </div>
                 </div>
                 <div class="skill">
-                  <span class="skill-name">Machine Learning</span>
+                  <span class="skill-name">Generative AI & LLM Agents</span>
                   <div class="skill-bar">
                     <div class="skill-level" style="width: 75%">75%</div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span class="skill-name">DevOps & MLOps Tools</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%">70%</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <a href="CV-Khuzaima.pdf" class="btn btn-primary">Download CV</a>
+            <a href="CV/Khuzaima-Hassan.pdf" class="btn btn-primary">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Services</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Data Engineering & ETL</h3>
+            <p>
+              Designing robust data architectures and automated ETL pipelines using PostgreSQL, BigQuery, and Python to ensure seamless data flow.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Deep Learning & Forecasting</h3>
+            <p>
+              Developing advanced neural networks and LSTM models for time-series forecasting, specializing in environmental and meteorological data predictions.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Agentic AI & LLM Systems</h3>
+            <p>
+              Building intelligent autonomous agents and RAG-based systems using LangGraph and CrewAI to automate complex workflows.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>MLOps & AI Deployment</h3>
+            <p>
+              Managing the end-to-end ML lifecycle, from containerization with Docker to real-time deployment using Hopsworks and Streamlit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Recent Projects</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mlops">DevOps / MLOps</button>
+          <button class="filter-btn" data-filter="genai">Generative AI</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="dataeng">Data Engineering</button>
+        </div>
+        <div class="project-grid">
+          <!-- Project 1: 10 Pearls AQI Predictor -->
+          <div class="project-card" data-category="mlops">
+
+            <div class="project-content">
+              <h3>10 Pearls AQI Predictor</h3>
+              <p>
+                Production-grade air quality forecasting system using ML models and automated MLOps pipeline. Features real-time predictions deployed via GitHub Actions and Hopsworks feature store.
+              </p>
+              <div class="project-tags">
+                <span>ML</span>
+                <span>Hopsworks</span>
+                <span>GitHub Actions</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://huggingface.co/spaces/KhuzaimaHassan/10pearls-aqi-predictor" class="btn-small">View Project</a>
+                <a href="https://github.com/KhuzaimaHassan/10-Pearls-AQI-Predictor" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: AI Academic Mentor -->
+          <div class="project-card" data-category="genai">
+
+            <div class="project-content">
+              <h3>AI Academic Mentor</h3>
+              <p>
+                Intelligent student support system built with LangGraph and RAG architecture. Provides personalized academic guidance using multi-agent workflows and vector-based knowledge retrieval.
+              </p>
+              <div class="project-tags">
+                <span>LangGraph</span>
+                <span>RAG</span>
+                <span>Streamlit</span>
+                <span>Groq</span>
+              </div>
+              <div class="project-links">
+                <a href="https://ai-academic-mentor.streamlit.app/" class="btn-small">View Project</a>
+                <a href="https://github.com/KhuzaimaHassan/AI-Academic-Mentor" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Insight Agent -->
+          <div class="project-card" data-category="genai">
+
+            <div class="project-content">
+              <h3>Insight Agent</h3>
+              <p>
+                AI-powered data insights generator that autonomously analyzes datasets and produces actionable business intelligence. Leverages LLM agents for automated exploratory data analysis.
+              </p>
+              <div class="project-tags">
+                <span>LLM Agents</span>
+                <span>Python</span>
+                <span>Data Analysis</span>
+              </div>
+              <div class="project-links">
+                <a href="https://insight-agent-ag.streamlit.app/" class="btn-small">View Project</a>
+                <a href="https://github.com/KhuzaimaHassan/Insight-Agent" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Fraud Detection -->
+          <div class="project-card" data-category="ml">
+
+            <div class="project-content">
+              <h3>Fraud Detection System</h3>
+              <p>
+                Comparative analysis of classification models for financial fraud detection. Implemented and benchmarked multiple ML algorithms to identify optimal performance metrics for production deployment.
+              </p>
+              <div class="project-tags">
+                <span>Scikit-learn</span>
+                <span>Classification</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/KhuzaimaHassan/Fraud-Detection" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Clustering App -->
+          <div class="project-card" data-category="ml">
+
+            <div class="project-content">
+              <h3>Interactive Clustering Application</h3>
+              <p>
+                Web-based clustering analysis tool with real-time visualizations. Enables users to explore multiple clustering algorithms and compare results through an intuitive Streamlit interface.
+              </p>
+              <div class="project-tags">
+                <span>Scikit-learn</span>
+                <span>Streamlit</span>
+                <span>Visualization</span>
+              </div>
+              <div class="project-links">
+                <a href="https://clusteringapp.streamlit.app/" class="btn-small">View Project</a>
+                <a href="https://github.com/KhuzaimaHassan/ClusteringApp" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Data Warehousing & BI -->
+          <div class="project-card" data-category="dataeng">
+
+            <div class="project-content">
+              <h3>Data Warehousing & Business Intelligence</h3>
+              <p>
+                End-to-end data warehouse implementation with dimensional modeling and ETL pipelines. Designed star schema architecture for optimized analytical queries and business reporting.
+              </p>
+              <div class="project-tags">
+                <span>SQL</span>
+                <span>ETL</span>
+                <span>Data Modeling</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/KhuzaimaHassan/Data-Warehousing-and-Business-Intelligence" class="btn-small">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <div class="section-header">
+          <h2>Certifications</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="cert-grid">
+          <!-- Certification 1 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Google Data Analytics Professional Certificate</h3>
+            <p class="cert-issuer">Coursera</p>
+            <a href="https://www.credly.com/badges/81b92b40-b8a5-4532-9d9a-5b9de81f1cca" target="_blank" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
+          </div>
+
+          <!-- Certification 2 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Data Engineering Essentials</h3>
+            <p class="cert-issuer">Coursera</p>
+            <a href="https://www.credly.com/badges/7c91c588-8dd4-4c6c-9566-531b4b2f9e23" target="_blank" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
+          </div>
+
+          <!-- Certification 3 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Machine Learning Engineer</h3>
+            <p class="cert-issuer">DataCamp</p>
+            <div class="cert-link-placeholder">
+              <i class="fas fa-check-circle"></i> Certified
+            </div>
+          </div>
+
+          <!-- Certification 4 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Machine Learning Scientist in Python</h3>
+            <p class="cert-issuer">DataCamp</p>
+            <div class="cert-link-placeholder">
+              <i class="fas fa-check-circle"></i> Certified
+            </div>
+          </div>
+
+          <!-- Certification 5 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Python for Data Science, AI & Development</h3>
+            <p class="cert-issuer">Coursera</p>
+            <a href="https://www.credly.com/badges/2b1a9a1f-8c03-4168-801d-5a497751c2cf" target="_blank" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
+          </div>
+
+          <!-- Certification 6 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Huawei Certified ICT Associate (HCIA) - Datacom</h3>
+            <p class="cert-issuer">Huawei</p>
+            <div class="cert-link-placeholder">
+              <i class="fas fa-check-circle"></i> Certified
+            </div>
           </div>
         </div>
       </div>
@@ -189,7 +453,7 @@
               <div class="education-body">
                 <h4>NED University</h4>
                 <ul class="education-details">
-                  <li>CGPA: 3.84</li>
+                  <li>CGPA: 3.86</li>
                   <li>Built projects like Shopping/Real State Management, Games, and Object Detectors in Python</li>
                   <li>Participated in AI Paradox Competition for Time Series Forecasting</li>
                 </ul>
@@ -228,172 +492,6 @@
         </div>
       </div>
     </section>
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-header">
-          <h2>My Services</h2>
-          <div class="underline"></div>
-        </div>
-        <div class="service-grid">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <h3>Data Analysis</h3>
-            <p>
-              Comprehensive data analysis using Python, SQL, and statistical
-              methods to extract actionable insights and drive informed
-              decision-making.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-brain"></i>
-            </div>
-            <h3>Machine Learning</h3>
-            <p>
-              Implementation of machine learning models and algorithms to solve
-              complex problems and generate predictive insights from your data.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-chart-bar"></i>
-            </div>
-            <h3>Data Visualization</h3>
-            <p>
-              Creation of interactive and informative visualizations that
-              communicate complex data stories clearly using tools like
-              Matplotlib, Seaborn, and Plotly.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-database"></i>
-            </div>
-            <h3>Database Management</h3>
-            <p>
-              Efficient database design, management, and optimization with SQL
-              to ensure secure and fast data storage and retrieval for your
-              applications.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2>Recent Projects</h2>
-          <div class="underline"></div>
-        </div>
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="data">Data Analysis</button>
-          <button class="filter-btn" data-filter="ml">Machine Learning</button>
-          <button class="filter-btn" data-filter="vis">Visualization</button>
-        </div>
-        <div class="project-grid">
-          <div class="project-card" data-category="data">
-            <div class="project-img">
-              <img
-                src="https://via.placeholder.com/600x400?text=EDA+Project"
-                alt="Exploratory Data Analysis"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Sales Data Analysis</h3>
-              <p>
-                Exploratory analysis of e-commerce sales data with statistical
-                insights and visualizations for business recommendations.
-              </p>
-              <div class="project-tags">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>Matplotlib</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="btn-small">View Project</a>
-                <a href="#" class="btn-small">Source Code</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card" data-category="ml">
-            <div class="project-img">
-              <img
-                src="https://via.placeholder.com/600x400?text=Machine+Learning"
-                alt="Machine Learning Project"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Customer Churn Prediction</h3>
-              <p>
-                A machine learning model to predict customer churn using
-                historical behavior and engagement metrics.
-              </p>
-              <div class="project-tags">
-                <span>Scikit-learn</span>
-                <span>TensorFlow</span>
-                <span>Python</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="btn-small">View Project</a>
-                <a href="#" class="btn-small">Source Code</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card" data-category="ml">
-            <div class="project-img">
-              <img
-                src="https://via.placeholder.com/600x400?text=Data+Visualization"
-                alt="Data Visualization"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Clustering Application</h3>
-              <p>
-                Interactive Streamlit Application where we can analyze and 
-                visualize the datasets using different algorithms.
-              </p>
-              <div class="project-tags">
-                <span>Scikit-learn</span>
-                <span>Python</span>
-                <span>Streamlit</span>
-              </div>
-              <div class="project-links">
-                <a href="https://clusteringapp.streamlit.app/" class="btn-small">View Project</a>
-                <a href="https://github.com/KhuzaimaHassan/ClusteringApp" class="btn-small">Source Code</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-card" data-category="data">
-            <div class="project-img">
-              <img
-                src="https://via.placeholder.com/600x400?text=SQL+Analysis"
-                alt="SQL Project"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Database Analytics Pipeline</h3>
-              <p>
-                SQL-based ETL pipeline for extracting, transforming, and
-                analyzing business data from multiple sources.
-              </p>
-              <div class="project-tags">
-                <span>SQL</span>
-                <span>PostgreSQL</span>
-                <span>Python</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="btn-small">View Project</a>
-                <a href="#" class="btn-small">Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-header">
@@ -414,7 +512,7 @@
               </div>
               <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <p>khuzaimahassan52@gmail.com</p>
+                <p>khuzaimahassan.work@gmail.com</p>
               </div>
               <div class="contact-item">
                 <i class="fas fa-phone"></i>
@@ -491,7 +589,7 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <p>&copy; 2025 Khuzaima Hassan. All Rights Reserved.</p>
+          <p>&copy; 2026 Khuzaima Hassan. All Rights Reserved.</p>
           <div class="back-to-top">
             <a href="#home"><i class="fas fa-arrow-up"></i></a>
           </div>

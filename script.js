@@ -20,7 +20,7 @@ navLinks.forEach((link) => {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Data Scientist", "Data Analyst", "Python Programmer"];
+const textArray = ["ML Engineer", "Data Engineer", "Python Programmer"];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000; // Delay between current and next text
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "service_yq7w8e7",
           "template_okyox08",
           this,
-          "U4_qxAJ-5Pc_EEiAk"
+          "uk3IvRaxju8DRuQZC"
         )
         .then(
           function () {
