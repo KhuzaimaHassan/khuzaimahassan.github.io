@@ -1488,43 +1488,7 @@ section.show {
   100% { transform: scale(1.1); opacity: 1; }
 }
 
-/* Custom Cursor */
-body {
-  cursor: none; /* Hide default cursor */
-}
-a, button, input, textarea, .filter-btn, .nav-link, .social-icon {
-  cursor: none !important; /* ensure cursor is none everywhere */
-}
 
-.cursor-dot,
-.cursor-ring {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 9999;
-  pointer-events: none;
-}
-
-.cursor-dot {
-  width: 8px;
-  height: 8px;
-  background-color: var(--primary-color);
-}
-
-.cursor-ring {
-  width: 30px;
-  height: 30px;
-  border: 2px solid var(--primary-color);
-  transition: width 0.2s, height 0.2s, background-color 0.2s;
-}
-
-.cursor-ring.hovered {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(45, 49, 250, 0.1);
-}
 
 /* Header Glassmorphism */
 header {
