@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Khuzaima Hassan | ML Engineer & Data Scientist</title>
+    <meta name="description" content="Portfolio of Khuzaima Hassan, ML Engineer & Data Scientist specializing in AI, Machine Learning, and Data Engineering." />
+    <meta property="og:title" content="Khuzaima Hassan | ML Engineer & Data Scientist" />
+    <meta property="og:description" content="Portfolio of Khuzaima Hassan, ML Engineer & Data Scientist specializing in AI, Machine Learning, and Data Engineering." />
+    <meta property="og:type" content="website" />
+    <!-- Placeholder for favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>KH</text></svg>">
     <link rel="stylesheet" href="styles.css?v=2.0" />
     <link
       rel="stylesheet"
@@ -13,13 +19,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/font/simple-icons.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Removed duplicate Font Awesome -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -37,10 +37,18 @@
     </script>
   </head>
   <body>
-    <header>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader-logo">KH</div>
+    </div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <header id="header">
       <div class="container">
         <nav class="navbar">
-          <div class="logo"><a href="#home" style="color: inherit; text-decoration: none;">Portfolio</a></div>
+          <div class="logo"><a href="#home" style="color: inherit; text-decoration: none;">Khuzaima.</a></div>
           <ul class="nav-menu">
             <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
             <li class="nav-item">
@@ -75,7 +83,7 @@
                 I'm a <span class="typed-text"></span
                 ><span class="cursor">&nbsp;</span>
               </h2>
-              <p>ML Engineer | Data Engineer | Python Programmer</p>
+              <p>Transforming complex data into intelligent, scalable solutions.</p>
               <div class="hero-btns">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -105,6 +113,9 @@
             </div>
           </div>
         </div>
+        <div class="scroll-indicator">
+          <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
       </div>
     </section>
     <section id="about" class="about">
@@ -130,37 +141,13 @@
 
             <div class="skills">
               <h3>My Skills</h3>
-              <div class="skill-bars">
-                <div class="skill">
-                  <span class="skill-name">Python (Data Science & Automation)</span>
-                  <div class="skill-bar">
-                    <div class="skill-level" style="width: 90%">90%</div>
-                  </div>
-                </div>
-                <div class="skill">
-                  <span class="skill-name">SQL & Data Warehousing</span>
-                  <div class="skill-bar">
-                    <div class="skill-level" style="width: 85%">85%</div>
-                  </div>
-                </div>
-                <div class="skill">
-                  <span class="skill-name">Machine Learning (LSTMs & Scikit-Learn)</span>
-                  <div class="skill-bar">
-                    <div class="skill-level" style="width: 80%">80%</div>
-                  </div>
-                </div>
-                <div class="skill">
-                  <span class="skill-name">Generative AI & LLM Agents</span>
-                  <div class="skill-bar">
-                    <div class="skill-level" style="width: 75%">75%</div>
-                  </div>
-                </div>
-                <div class="skill">
-                  <span class="skill-name">DevOps & MLOps Tools</span>
-                  <div class="skill-bar">
-                    <div class="skill-level" style="width: 70%">70%</div>
-                  </div>
-                </div>
+              <div class="tech-grid">
+                <div class="tech-card"><i class="fab fa-python tech-icon"></i><span>Python</span></div>
+                <div class="tech-card"><i class="fas fa-database tech-icon"></i><span>SQL & DBs</span></div>
+                <div class="tech-card"><i class="fas fa-brain tech-icon"></i><span>Machine Learning</span></div>
+                <div class="tech-card"><i class="fas fa-robot tech-icon"></i><span>Agentic AI & LLMs</span></div>
+                <div class="tech-card"><i class="fab fa-docker tech-icon"></i><span>Docker & MLOps</span></div>
+                <div class="tech-card"><i class="fas fa-chart-line tech-icon"></i><span>Data Engineering</span></div>
               </div>
             </div>
 

@@ -78,8 +78,12 @@ document.addEventListener("DOMContentLoaded", function () {
       projectCards.forEach((card) => {
         if (filter === "all" || card.getAttribute("data-category") === filter) {
           card.style.display = "block";
+          setTimeout(() => card.classList.remove("fade-out"), 10);
         } else {
-          card.style.display = "none";
+          card.classList.add("fade-out");
+          setTimeout(() => { 
+            if(card.classList.contains("fade-out")) card.style.display = "none"; 
+          }, 300);
         }
       });
     });
@@ -139,3 +143,52 @@ const observer = new IntersectionObserver(
 document.querySelectorAll("section").forEach((section) => {
   observer.observe(section);
 });
+
+// Preloader
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    preloader.classList.add("fade-out");
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 500);
+  }
+});
+
+// Custom Cursor
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorRing = document.querySelector(".cursor-ring");
+
+if (cursorDot && cursorRing) {
+  window.addEventListener("mousemove", (e) => {
+    cursorDot.style.left = e.clientX + "px";
+    cursorDot.style.top = e.clientY + "px";
+    
+    // Add slight delay for ring to create trailing effect
+    setTimeout(() => {
+      cursorRing.style.left = e.clientX + "px";
+      cursorRing.style.top = e.clientY + "px";
+    }, 50);
+  });
+
+  document.querySelectorAll("a, button, input, textarea, .filter-btn").forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      cursorRing.classList.add("hovered");
+    });
+    el.addEventListener("mouseleave", () => {
+      cursorRing.classList.remove("hovered");
+    });
+  });
+}
+
+// Header scroll effect
+const header = document.getElementById("header");
+if (header) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("header-scrolled");
+    } else {
+      header.classList.remove("header-scrolled");
+    }
+  });
+}
