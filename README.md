@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 🌐 khuzaimahassan.github.io
 
@@ -178,4 +178,3 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 AI / ML Engineer · NED University
 
 </div>
-]]>
