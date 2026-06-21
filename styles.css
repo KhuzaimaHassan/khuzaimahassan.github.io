@@ -450,10 +450,26 @@ header {
     font-size: 1rem;
   }
 
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .hero-btns .btn {
-    display: block;
-    width: 90%;
-    margin: 10px auto;
+    width: auto;
+    min-width: 200px;
+    margin: 8px 0;
+  }
+
+  .hero-achievements {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .achievement-item {
+    font-size: 0.75rem;
+    padding: 4px 10px;
   }
 
   .hero::before,
