@@ -283,16 +283,44 @@ header {
 
 .hero-desc {
   font-size: 1.15rem;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   color: var(--text-muted);
   max-width: 600px;
   line-height: 1.6;
   animation: slideInLeft 1.4s ease-out;
 }
 
-.hero-btns {
+.hero-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 12px;
   margin-bottom: 30px;
+  animation: slideInLeft 1.5s ease-out;
+}
+
+.achievement-item {
+  font-size: 0.9rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: var(--text-color);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.hero-action-group {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   animation: slideInLeft 1.6s ease-out;
+}
+
+.hero-btns {
+  margin-bottom: 25px;
 }
 
 .hero-btns .btn {
@@ -440,7 +468,7 @@ header {
 }
 
 .hero-text .social-icons {
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .social-icon {
