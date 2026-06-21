@@ -20,10 +20,9 @@
       href="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/font/simple-icons.min.css"
     />
     <!-- Removed duplicate Font Awesome -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Update EmailJS version -->
     <script
       type="text/javascript"
@@ -46,7 +45,7 @@
       <div class="container">
         <nav class="navbar">
           <div class="logo"><a href="#home" style="color: inherit; text-decoration: none;">Khuzaima.</a></div>
-          <ul class="nav-menu">
+          <ul class="nav-menu" id="primary-navigation">
             <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
@@ -55,20 +54,26 @@
               <a href="#experience" class="nav-link">Experience</a>
             </li>
             <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Expertise</a>
             </li>
             <li class="nav-item">
               <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
+              <a href="#certifications" class="nav-link">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
-          <div class="hamburger">
+          <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-          </div>
+          </button>
         </nav>
       </div>
     </header>
@@ -78,12 +83,12 @@
         <div class="hero-content">
           <div class="hero-flex">
             <div class="hero-text">
-              <h1>Hi, I'm <span class="highlight">Khuzaima Hassan</span></h1>
+              <p class="hero-intro">Hi, I'm Khuzaima Hassan.</p>
+              <h1>Building Intelligent Data Systems & <span class="highlight">AI Solutions.</span></h1>
               <h2>
-                I'm a <span class="typed-text"></span
-                ><span class="cursor">&nbsp;</span>
+                Specializing in <span class="typewriter-container"><span class="typed-text"></span><span class="cursor">&nbsp;</span></span>
               </h2>
-              <p>Transforming complex data into intelligent, scalable solutions.</p>
+              <p class="hero-desc">Computer Science graduate specializing in Data Science with experience in Machine Learning, Generative AI, and intelligent data systems. Passionate about building AI-powered applications that transform data into actionable insights and real-world solutions.</p>
               <div class="hero-btns">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -122,36 +127,56 @@
           <h2>About Me</h2>
           <div class="underline"></div>
         </div>
-        <!-- <div class="about-content">
-          <div class="about-img">
-            <img src="images/Khuzaima_DT-22302.jpg" alt="Profile Picture" />
-          </div> -->
           <div class="about-text">
-            <!-- <h3>Hello! I’m <span class="highlight">Khuzaima Hassan</span></h3> -->
-            <p>
-              I am a Computer Science Senior at NED University, deeply committed to the intersection of data science and intelligent automation. My journey is fueled by a passion for transforming raw data into actionable insights and building end-to-end systems that solve real world problems.
-
-              With a strong foundation in Python and SQL, I specialize in designing and deploying machine learning models, with a growing focus on MLOps and Agentic AI. My technical experience ranges from building sophisticated forecasting models like the Pearls AQI Predictor using GitHub Actions and Hopsworks to developing intelligent telehealth solutions like TeleTabib.
+            <p class="about-lead">
+              I am a Computer Science graduate specializing in Data Science from NED University of Engineering & Technology. My interests lie at the intersection of Machine Learning, Generative AI, and intelligent data systems, where I enjoy transforming complex data into practical solutions.
             </p>
-            <p>
-              Currently, I am looking to collaborate on innovative projects that push the boundaries of Data Engineering and Artificial Intelligence. If you're looking for a developer who is as comfortable with a complex dataset as they are with a deployment pipeline, let’s connect!
-            </p>
+            <div class="about-body">
+              <p>
+                During my journey, I have gained hands-on experience developing end-to-end AI and machine learning applications, including fraud detection systems, risk scoring platforms, predictive analytics solutions, and LLM-powered assistants. I have also worked as a Data Science Intern at 10Pearls, where I contributed to machine learning projects involving data preprocessing, feature engineering, model development, and data visualization.
+              </p>
+              <p>
+                My technical expertise includes Python, SQL, Machine Learning, FastAPI, Streamlit, PostgreSQL, and modern Generative AI technologies such as Gemini, Groq, Ollama, and LLM integration workflows. I am particularly interested in building AI-powered products that bridge the gap between advanced technology and real-world business impact.
+              </p>
+              <p>
+                I am currently seeking opportunities in AI/ML Engineering, Data Science, Generative AI, and Applied Machine Learning, where I can contribute to innovative projects while continuing to grow as an engineer and problem solver.
+              </p>
+            </div>
 
-            <div class="skills">
-              <h3>My Skills</h3>
-              <div class="tech-grid">
-                <div class="tech-card"><i class="fab fa-python tech-icon"></i><span>Python</span></div>
-                <div class="tech-card"><i class="fas fa-database tech-icon"></i><span>SQL & DBs</span></div>
-                <div class="tech-card"><i class="fas fa-brain tech-icon"></i><span>Machine Learning</span></div>
-                <div class="tech-card"><i class="fas fa-robot tech-icon"></i><span>Agentic AI & LLMs</span></div>
-                <div class="tech-card"><i class="fab fa-docker tech-icon"></i><span>Docker & MLOps</span></div>
-                <div class="tech-card"><i class="fas fa-chart-line tech-icon"></i><span>Data Engineering</span></div>
+            <div class="skills-section">
+              <h3>Technical Arsenal</h3>
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h4>Data & ML</h4>
+                  <div class="skill-tags">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Agentic AI & LLMs</span>
+                    <span>Scikit-learn</span>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <h4>Engineering</h4>
+                  <div class="skill-tags">
+                    <span>SQL & DBs</span>
+                    <span>Data Engineering</span>
+                    <span>PostgreSQL</span>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <h4>DevOps & Tools</h4>
+                  <div class="skill-tags">
+                    <span>Docker</span>
+                    <span>MLOps</span>
+                    <span>GitHub Actions</span>
+                    <span>Hopsworks</span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <a href="CV/Khuzaima-Hassan-Resume.pdf" class="btn btn-primary">Download CV</a>
+            <a href="CV/Khuzaima-Hassan-Resume.pdf" class="btn btn-primary"><i class="fas fa-download" style="margin-right: 8px;"></i>Download Resume</a>
           </div>
-        </div>
       </div>
     </section>
 
@@ -217,10 +242,46 @@
     <section id="services" class="services">
       <div class="container">
         <div class="section-header">
-          <h2>My Services</h2>
+          <h2>Core Expertise</h2>
           <div class="underline"></div>
         </div>
         <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Machine Learning & Predictive Analytics</h3>
+            <p>
+              Building end-to-end machine learning solutions including classification, regression, fraud detection, risk scoring, and predictive analytics using Python, Scikit-learn, and modern data science workflows.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Generative AI & LLM Applications</h3>
+            <p>
+              Developing AI-powered applications using Gemini, Groq, Ollama, prompt engineering, and retrieval-augmented workflows to create intelligent assistants and data-driven solutions.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <h3>Data Science & Analytics</h3>
+            <p>
+              Transforming raw data into actionable insights through exploratory data analysis, feature engineering, statistical modeling, SQL, and interactive visualizations.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>AI Application Development</h3>
+            <p>
+              Building and deploying AI solutions with FastAPI, Streamlit, PostgreSQL, and modern Python frameworks to deliver scalable and user-friendly applications.
+            </p>
+          </div>
           <div class="service-card">
             <div class="service-icon">
               <i class="fas fa-database"></i>
@@ -228,33 +289,6 @@
             <h3>Data Engineering & ETL</h3>
             <p>
               Designing robust data architectures and automated ETL pipelines using PostgreSQL, BigQuery, and Python to ensure seamless data flow.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-brain"></i>
-            </div>
-            <h3>Deep Learning & Forecasting</h3>
-            <p>
-              Developing advanced neural networks and LSTM models for time-series forecasting, specializing in environmental and meteorological data predictions.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-robot"></i>
-            </div>
-            <h3>Agentic AI & LLM Systems</h3>
-            <p>
-              Building intelligent autonomous agents and RAG-based systems using LangGraph and CrewAI to automate complex workflows.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-cogs"></i>
-            </div>
-            <h3>MLOps & AI Deployment</h3>
-            <p>
-              Managing the end-to-end ML lifecycle, from containerization with Docker to real-time deployment using Hopsworks and Streamlit.
             </p>
           </div>
         </div>
@@ -275,11 +309,53 @@
           <button class="filter-btn" data-filter="dataeng">Data Engineering</button>
         </div>
         <div class="project-grid">
+          <!-- Project: Job Finder AI -->
+          <div class="project-card" data-category="genai">
+            <div class="project-content">
+              <h3>Job Finder AI</h3>
+              <p class="project-subtitle">AI-powered Job Platform</p>
+              <p>
+                Full-stack job matching platform that analyzes resumes, finds best-fit jobs, and prepares candidates for interviews using Google Gemini AI and Next.js.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>FastAPI</span>
+                <span>Gemini AI</span>
+                <span>Supabase</span>
+              </div>
+              <div class="project-links">
+                <a href="https://job-finder-ai-kappa.vercel.app" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/job-finder-ai" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project: Risk Scoring Platform -->
+          <div class="project-card" data-category="ml">
+            <div class="project-content">
+              <h3>Risk Scoring Platform</h3>
+              <p class="project-subtitle">Fraud Risk Pipeline</p>
+              <p>
+                Production-style fraud risk scoring platform featuring real-time transaction scoring with sub-50ms latency, an interactive React dashboard, and ML feature engineering.
+              </p>
+              <div class="project-tags">
+                <span>FastAPI</span>
+                <span>React</span>
+                <span>Scikit-learn</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://risk-scoring-platform-9h5e.onrender.com/ui/" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/Risk-Scoring-Platform" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </div>
+
           <!-- Project 1: 10 Pearls AQI Predictor -->
           <div class="project-card" data-category="mlops">
-
             <div class="project-content">
               <h3>10 Pearls AQI Predictor</h3>
+              <p class="project-subtitle">Production MLOps Pipeline</p>
               <p>
                 Production-grade air quality forecasting system using ML models and automated MLOps pipeline. Features real-time predictions deployed via GitHub Actions and Hopsworks feature store.
               </p>
@@ -290,17 +366,17 @@
                 <span>Python</span>
               </div>
               <div class="project-links">
-                <a href="https://huggingface.co/spaces/KhuzaimaHassan/10pearls-aqi-predictor" class="btn-small">View Project</a>
-                <a href="https://github.com/KhuzaimaHassan/10-Pearls-AQI-Predictor" class="btn-small">Source Code</a>
+                <a href="https://huggingface.co/spaces/KhuzaimaHassan/10pearls-aqi-predictor" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/10-Pearls-AQI-Predictor" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source</a>
               </div>
             </div>
           </div>
 
           <!-- Project 2: AI Academic Mentor -->
           <div class="project-card" data-category="genai">
-
             <div class="project-content">
               <h3>AI Academic Mentor</h3>
+              <p class="project-subtitle">LangGraph & RAG Architecture</p>
               <p>
                 Intelligent student support system built with LangGraph and RAG architecture. Provides personalized academic guidance using multi-agent workflows and vector-based knowledge retrieval.
               </p>
@@ -311,17 +387,17 @@
                 <span>Groq</span>
               </div>
               <div class="project-links">
-                <a href="https://ai-academic-mentor.streamlit.app/" class="btn-small">View Project</a>
-                <a href="https://github.com/KhuzaimaHassan/AI-Academic-Mentor" class="btn-small">Source Code</a>
+                <a href="https://ai-academic-mentor.streamlit.app/" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/AI-Academic-Mentor" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source</a>
               </div>
             </div>
           </div>
 
           <!-- Project 3: Insight Agent -->
           <div class="project-card" data-category="genai">
-
             <div class="project-content">
               <h3>Insight Agent</h3>
+              <p class="project-subtitle">Automated Data Analysis</p>
               <p>
                 AI-powered data insights generator that autonomously analyzes datasets and produces actionable business intelligence. Leverages LLM agents for automated exploratory data analysis.
               </p>
@@ -331,17 +407,17 @@
                 <span>Data Analysis</span>
               </div>
               <div class="project-links">
-                <a href="https://insight-agent-ag.streamlit.app/" class="btn-small">View Project</a>
-                <a href="https://github.com/KhuzaimaHassan/Insight-Agent" class="btn-small">Source Code</a>
+                <a href="https://insight-agent-ag.streamlit.app/" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/Insight-Agent" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source</a>
               </div>
             </div>
           </div>
 
           <!-- Project 4: Fraud Detection -->
           <div class="project-card" data-category="ml">
-
             <div class="project-content">
               <h3>Fraud Detection System</h3>
+              <p class="project-subtitle">Classification Models</p>
               <p>
                 Comparative analysis of classification models for financial fraud detection. Implemented and benchmarked multiple ML algorithms to identify optimal performance metrics for production deployment.
               </p>
@@ -351,36 +427,16 @@
                 <span>Python</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/KhuzaimaHassan/Fraud-Detection" class="btn-small">Source Code</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5: Clustering App -->
-          <div class="project-card" data-category="ml">
-
-            <div class="project-content">
-              <h3>Interactive Clustering Application</h3>
-              <p>
-                Web-based clustering analysis tool with real-time visualizations. Enables users to explore multiple clustering algorithms and compare results through an intuitive Streamlit interface.
-              </p>
-              <div class="project-tags">
-                <span>Scikit-learn</span>
-                <span>Streamlit</span>
-                <span>Visualization</span>
-              </div>
-              <div class="project-links">
-                <a href="https://clusteringapp.streamlit.app/" class="btn-small">View Project</a>
-                <a href="https://github.com/KhuzaimaHassan/ClusteringApp" class="btn-small">Source Code</a>
+                <a href="https://github.com/KhuzaimaHassan/Fraud-Detection" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source Code</a>
               </div>
             </div>
           </div>
 
           <!-- Project 6: Data Warehousing & BI -->
           <div class="project-card" data-category="dataeng">
-
             <div class="project-content">
-              <h3>Data Warehousing & Business Intelligence</h3>
+              <h3>Data Warehousing & BI</h3>
+              <p class="project-subtitle">End-to-end ETL Architecture</p>
               <p>
                 End-to-end data warehouse implementation with dimensional modeling and ETL pipelines. Designed star schema architecture for optimized analytical queries and business reporting.
               </p>
@@ -391,7 +447,7 @@
                 <span>PostgreSQL</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/KhuzaimaHassan/Data-Warehousing-and-Business-Intelligence" class="btn-small">Source Code</a>
+                <a href="https://github.com/KhuzaimaHassan/Data-Warehousing-and-Business-Intelligence" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source Code</a>
               </div>
             </div>
           </div>
@@ -437,9 +493,9 @@
             </div>
             <h3>Machine Learning Engineer</h3>
             <p class="cert-issuer">DataCamp</p>
-            <div class="cert-link-placeholder">
-              <i class="fas fa-check-circle"></i> Certified
-            </div>
+            <a href="https://www.datacamp.com/statement-of-accomplishment/track/da6fc5ab0b73a68cf9b7d44bb13da0d3854fbc4f?raw=1" target="_blank" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
           </div>
 
           <!-- Certification 4 -->
@@ -473,9 +529,9 @@
             </div>
             <h3>Huawei Certified ICT Associate (HCIA) - Datacom</h3>
             <p class="cert-issuer">Huawei</p>
-            <div class="cert-link-placeholder">
-              <i class="fas fa-check-circle"></i> Certified
-            </div>
+            <a href="https://github.com/KhuzaimaHassan/CT-376-Computer-Communication-Network/blob/main/Certification_Certificate.pdf" target="_blank" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
           </div>
         </div>
       </div>
@@ -487,50 +543,56 @@
           <h2>Education</h2>
           <div class="underline"></div>
         </div>
-        <div class="education-timeline">
-          <div class="education-item">
-            <div class="education-content">
-              <div class="education-header">
-                <h3>Data Science Undergraduate</h3>
-                <span class="education-date">Sep 2022 - Present</span>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Bachelor of Computer Science (Data Science Specialization)</h3>
+                  <span class="timeline-company">NED University of Engineering & Technology</span>
+                </div>
+                <span class="timeline-date">Sep 2022 - June 2026</span>
               </div>
-              <div class="education-body">
-                <h4>NED University</h4>
-                <ul class="education-details">
-                  <li>CGPA: 3.86</li>
-                  <li>Built projects like Shopping/Real State Management, Games, and Object Detectors in Python</li>
-                  <li>Participated in AI Paradox Competition for Time Series Forecasting</li>
-                </ul>
-              </div>
+              <ul class="timeline-details">
+                <li>Graduated with CGPA 3.885/4.00 and secured 1st Position in the Data Science Batch 2022</li>
+                <li>Completed a Data Science Internship at 10Pearls, working on machine learning and predictive analytics projects</li>
+                <li>Developed AI/ML solutions including Fraud Detection Systems, Risk Scoring Platforms, AQI Prediction Models, and LLM-Powered Applications</li>
+                <li>Strong foundation in Machine Learning, Generative AI, FastAPI, SQL, Data Engineering, and Applied Analytics</li>
+              </ul>
             </div>
           </div>
-          <div class="education-item">
-            <div class="education-content">
-              <div class="education-header">
-                <h3>Intermediate</h3>
-                <span class="education-date">Aug 2020 - Jul 2022</span>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Intermediate</h3>
+                  <span class="timeline-company">Adamjee Govt Science College</span>
+                </div>
+                <span class="timeline-date">Aug 2020 - Jul 2022</span>
               </div>
-              <div class="education-body">
-                <h4>Adamjee Govt Science College</h4>
-                <ul class="education-details">
-                  <li>A-1 grade with 93.51% marks</li>
-                </ul>
-              </div>
+              <ul class="timeline-details">
+                <li>A-1 grade with 93.51% marks</li>
+              </ul>
             </div>
           </div>
-          <div class="education-item">
-            <div class="education-content">
-              <div class="education-header">
-                <h3>Matriculation</h3>
-                <span class="education-date">April 2018 - Jul 2020</span>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Matriculation</h3>
+                  <span class="timeline-company">Usman Public School System</span>
+                </div>
+                <span class="timeline-date">April 2018 - Jul 2020</span>
               </div>
-              <div class="education-body">
-                <h4>Usman Public School System</h4>
-                <ul class="education-details">
-                  <li>Awarded consecutive shields for achieving A+ grades in all subjects</li>
-                  <li>Actively involved in cricket tournament at the school level</li>
-                </ul>
-              </div>
+              <ul class="timeline-details">
+                <li>Awarded consecutive shields for achieving A+ grades in all subjects</li>
+                <li>Actively involved in cricket tournament at the school level</li>
+              </ul>
             </div>
           </div>
         </div>
