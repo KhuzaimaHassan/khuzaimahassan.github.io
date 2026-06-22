@@ -446,6 +446,13 @@ header {
     font-size: 1.6rem;
   }
 
+  .typewriter-container {
+    display: block;
+    text-align: center;
+    min-width: auto;
+    margin-top: 5px;
+  }
+
   .hero-content p {
     font-size: 1rem;
   }
