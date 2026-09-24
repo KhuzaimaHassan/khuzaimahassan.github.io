@@ -50,7 +50,7 @@ if (hamburger && navMenu) {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["AI/ML Engineering", "Data Science", "Data Engineering"];
+const textArray = ["AI/ML Engineering", "Agentic AI Systems", "Data Science", "MLOps & Data Engineering"];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000;
