@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khuzaimahassan.mesitemap.xml
+Sitemap: https://khuzaimahassan.me/sitemap.xml
