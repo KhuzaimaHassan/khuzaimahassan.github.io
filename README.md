@@ -1,180 +1,110 @@
-<div align="center">
+# Khuzaima Hassan — Portfolio
 
-# 🌐 khuzaimahassan.github.io
+A personal portfolio presenting my AI/ML, data engineering, and LLM application work, alongside experience, education, credentials, and contact links.
 
-**Personal Portfolio — AI / ML Engineer**
+**[Portfolio](https://khuzaimahassan.me)** · **[Vercel address listed on this repository](https://khuzaimahassan.vercel.app)** · **[GitHub profile](https://github.com/KhuzaimaHassan)**
 
-[![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-2ea44f?logo=github)](https://khuzaimahassan.github.io)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3 / SASS](https://img.shields.io/badge/CSS3%20%2F%20SASS-CC6699?logo=sass&logoColor=white)](https://sass-lang.com/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-528DD7?logo=fontawesome&logoColor=white)](https://fontawesome.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+The website is a static HTML, CSS, and vanilla JavaScript application. It has no frontend build step or package installation requirement. Project cards summarize implemented workflows; the linked project repositories contain setup instructions, evaluation evidence, and limitations. Demo availability depends on each project's hosting and external services.
 
-</div>
+## What visitors can explore
 
----
+| Section in `index.html` | Content |
+| --- | --- |
+| `#home` | Introduction, animated role text, and social links |
+| `#about` | Background, skills, and a downloadable résumé |
+| `#experience` | Experience timeline |
+| `#services` | Areas of work and services |
+| `#projects` | Ten project cards with category filters, source links, and selected demos |
+| `#certifications` | Credential cards and available verification links |
+| `#education` | Education and achievements |
+| `#contact` | Contact details, social links, and an EmailJS contact form |
 
-## 📌 Problem
+Project filters cover DevOps / MLOps, Generative AI, Machine Learning, and Data Engineering. JavaScript also handles the mobile menu, section highlighting, and scroll animations, with a reduced-motion option for the role text.
 
-Building a strong online presence as an AI / ML professional requires more than a résumé — it demands a living, interactive showcase of projects, skills, certifications, and services. Generic portfolio templates rarely convey the depth of technical work in data engineering, deep learning, and agentic AI systems. This portfolio solves that gap by providing a fast, fully static website that is easy to maintain, costs nothing to host, and is tailored to highlight the breadth and depth of my work.
+## Projects shown on the site
 
----
+| Project | Implemented scope |
+| --- | --- |
+| [Logistics Forecasting](https://github.com/KhuzaimaHassan/logistics-forecasting-platform) | Demand and ETA inference, scheduled processing of a historical NYC Green TLC sample, Feast features, and an operations Copilot. Hosted Kafka/Valkey and local Redpanda/Redis are distinct configurations. |
+| [Quasar](https://github.com/KhuzaimaHassan/Quasar) | Streaming multi-model chat, document answers with citations, memory, and agent workflows that pause for approval before execution. |
+| [Voice Patient Registration](https://github.com/KhuzaimaHassan/voice-patient-registration) | Voice intake prototype: configured Vapi tool calls reach FastAPI validation and PostgreSQL persistence. Voice behavior depends on the external assistant configuration. |
+| [Job Finder AI](https://github.com/KhuzaimaHassan/job-finder-ai) | Profile/resume matching, remote tech and Pakistan job search, application preparation, and application tracking with Next.js, FastAPI, Supabase, and Gemini. |
+| [Risk Scoring Platform](https://github.com/KhuzaimaHassan/Risk-Scoring-Platform) | Educational demo with authenticated transaction scoring, saved prediction records, and a React analyst dashboard. Hosted admin credentials are private; see its performance guide for measured limits. |
+| [10 Pearls AQI Predictor](https://github.com/KhuzaimaHassan/10-Pearls-AQI-Predictor) | Karachi AQI forecasting using Hopsworks features/models, hourly data jobs, and daily training workflows. |
+| [AI Academic Mentor](https://github.com/KhuzaimaHassan/AI-Academic-Mentor) | OULAD classification and guidance retrieval combined in a LangGraph mentoring-report prototype. Suggested advice requires human review. |
+| [Insight Agent](https://github.com/KhuzaimaHassan/Insight-Agent) | Streamlit exploration, charts, Gemini explanations from dataset samples/statistics, and HTML reports. |
+| [Fraud Detection](https://github.com/KhuzaimaHassan/Fraud-Detection) | Evaluation of saved classifiers and a Streamlit demo; saved results are historical and local evaluation needs the required data/artifacts. |
+| [Data Warehousing & BI](https://github.com/KhuzaimaHassan/Data-Warehousing-and-Business-Intelligence) | E-commerce ETL, dimensional modeling, clustering, and Power BI coursework. Existing warehouse results need customer-grain validation. |
 
-## 🛠️ Tech Stack
+These descriptions summarize repository implementations, rather than certifying production readiness or current demo uptime.
 
-| Layer | Technology |
-|---|---|
-| **Markup** | HTML5 |
-| **Styling** | CSS3 / SASS |
-| **Scripting** | Vanilla JavaScript |
-| **Icons** | Font Awesome |
-| **Hosting** | GitHub Pages |
-
----
-
-## 🏗️ Architecture
-
-The site follows a clean, static front-end architecture — no build tools, no frameworks, just fast-loading pages served directly from GitHub Pages.
+## How the site works
 
 ```mermaid
-graph LR
-    subgraph "GitHub Repository"
-        A["HTML Pages"] --> B["CSS / SASS Stylesheets"]
-        A --> C["Vanilla JavaScript"]
-        A --> D["Font Awesome CDN"]
-    end
-
-    subgraph "GitHub Pages"
-        E["Static Hosting & CDN"]
-    end
-
-    A -- "git push" --> E
-    E -- "https://khuzaimahassan.github.io" --> F["Visitor's Browser"]
-
-    style A fill:#E34F26,color:#fff
-    style B fill:#CC6699,color:#fff
-    style C fill:#F7DF1E,color:#000
-    style D fill:#528DD7,color:#fff
-    style E fill:#2ea44f,color:#fff
-    style F fill:#0d1117,color:#fff
+flowchart LR
+    H[index.html] --> C[styles.css]
+    H --> J[script.js]
+    H --> A[Local images and resume PDFs]
+    H --> E[External fonts, icons and widgets]
+    J --> M[EmailJS contact submission]
+    S[Static web host] --> H
 ```
 
-**Page Map**
+The contact form sends through EmailJS from the browser. It depends on the configured EmailJS account and network access; there is no contact API or mail server in this repository. External fonts, icons, EmailJS, and the feedback widget also depend on their providers. Local previews do not require sending a contact message.
 
-```
-/
-├── index.html          # Home — hero, intro, call-to-action
-├── about.html          # About — background, education (NED University)
-├── projects.html       # Projects — featured AI/ML case studies
-├── resume.html         # Resume — experience & skills overview
-├── certifications.html # Certifications — verified credentials
-└── contact.html        # Contact — form / social links
-```
+## Run locally
 
----
-
-## 🔗 Demo
-
-👉 **Live Site:** [https://khuzaimahassan.github.io](https://khuzaimahassan.github.io)
-
----
-
-## ✨ Features
-
-### 🗂️ Pages
-
-| Page | Highlights |
-|---|---|
-| **Home** | Hero section, quick bio, call-to-action buttons |
-| **About** | Education (NED University), career summary |
-| **Projects** | Filterable project cards with descriptions & links |
-| **Resume** | Downloadable résumé, skills chart |
-| **Certifications** | Verified badges and credential links |
-| **Contact** | Contact form and social media links |
-
-### 🚀 Featured Projects
-
-| Project | Domain |
-|---|---|
-| **AQI Predictor** | Environmental ML — air quality index forecasting |
-| **AI Academic Mentor** | Agentic AI — intelligent tutoring system |
-| **Fraud Detection** | Financial ML — anomaly & fraud classification |
-| **Data Warehousing** | Data Engineering — ETL pipeline & warehouse design |
-
-### 💼 Services Showcased
-
-- **Data Engineering & ETL** — scalable pipelines, warehouse design, data integration
-- **Deep Learning & Forecasting** — time-series models, CNNs, transformers
-- **Agentic AI & LLM Systems** — autonomous agents, RAG pipelines, prompt engineering
-- **MLOps & Deployment** — CI/CD for ML, containerisation, model monitoring
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Any modern web browser — no build step required.
-
-### Local Development
+With Git and Python 3 installed:
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/khuzaimahassan/khuzaimahassan.github.io.git
-
-# 2. Enter the project directory
+git clone https://github.com/KhuzaimaHassan/khuzaimahassan.github.io.git
 cd khuzaimahassan.github.io
-
-# 3. Open in your browser (pick one)
-#    macOS
-open index.html
-#    Linux
-xdg-open index.html
-#    Windows
-start index.html
+python -m http.server 8000 --bind 127.0.0.1
 ```
 
-> For live-reload during development you can use any static server:
->
-> ```bash
-> # Using Python
-> python -m http.server 8000
->
-> # Using Node (npx)
-> npx serve .
-> ```
+Open **http://localhost:8000/**. Reload after editing HTML, CSS, or JavaScript. Python's HTTP server does not provide automatic live reload.
 
-### Deployment
+Alternatively, the repository includes a dependency-free Node.js preview server:
 
-Push to the `main` branch — GitHub Pages will automatically build and deploy.
+```bash
+node server.js
+```
 
----
+It uses port 8000, so run one preview server at a time. The Python command is the simplest documented preview path.
 
-## 🤝 Contributing
+## Repository layout
 
-Contributions, issues, and feature requests are welcome!
+```text
+index.html          Main page and all portfolio sections
+styles.css          Plain CSS, responsive layout and animation styles
+script.js           Navigation, filters, animations and EmailJS submission
+pic/                Profile images
+CV/                 Resume PDFs; index.html selects the download
+about.html          Legacy redirect to the hosted #about section
+projects.html       Legacy redirect to the hosted #projects section
+resume.html         Legacy redirect to the hosted #about section
+certifications.html Legacy redirect to the hosted #experience section
+contact.html        Legacy redirect to the hosted #contact section
+server.js           Optional Node.js preview server
+firebase.json       Firebase Hosting settings
+.firebaserc         Existing Firebase project alias
+robots.txt          Crawler settings
+sitemap.xml         Sitemap
+LICENSE             MIT license
+```
 
-1. **Fork** the repository
-2. **Create** a feature branch — `git checkout -b feature/awesome-improvement`
-3. **Commit** your changes — `git commit -m "Add awesome improvement"`
-4. **Push** to the branch — `git push origin feature/awesome-improvement`
-5. **Open** a Pull Request
+The legacy HTML files redirect to the custom domain even during a local preview. Use the anchors on the local `index.html` to inspect sections locally. There are no SASS source files, CSS compilation steps, or separate application pages behind those redirects.
 
-Please open an issue first to discuss major changes.
+## Hosting and updates
 
----
+The canonical URL in the HTML is **https://khuzaimahassan.me**. GitHub repository metadata also lists the Vercel address linked above; this repository does not contain a Vercel deployment configuration or a committed deployment workflow.
 
-## 📄 License
+Firebase Hosting configuration is included: `firebase.json` serves the repository root and `.firebaserc` names the existing `khuzaima-portfolio` project. An authorized maintainer can deploy using the Firebase CLI and `firebase deploy --only hosting` after selecting the intended project and reviewing the files served from the root. The CSS/JavaScript and image cache headers are set to one week.
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+The static files can also be served by GitHub Pages when Pages is configured in repository settings. The repository name alone does not establish that Pages is enabled, and a push to `main` is not a hosting-independent deployment command. Use the configured host's deployment process.
 
----
+To update project presentation, edit the cards in `index.html` and the project table here together. Check each project's current source, documented demo URL, and evidence before adding performance or readiness claims.
 
-<div align="center">
+## License
 
-**Built with ❤️ by [Khuzaima Hassan](https://github.com/khuzaimahassan)**
-
-AI / ML Engineer · NED University
-
-</div>
+[MIT](LICENSE) · Khuzaima Hassan
