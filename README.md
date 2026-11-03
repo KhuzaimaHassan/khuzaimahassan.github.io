@@ -10,16 +10,17 @@ The website is a static HTML, CSS, and vanilla JavaScript application. It has no
 
 | Section in `index.html` | Content |
 | --- | --- |
-| `#home` | Introduction, animated role text, and social links |
-| `#about` | Background, skills, and a downloadable résumé |
-| `#experience` | Experience timeline |
-| `#services` | Areas of work and services |
-| `#projects` | Ten project cards with category filters, source links, and selected demos |
+| `#home` | Concise introduction, Work / Resume actions, portrait, and social links |
+| `#projects` | Four featured projects with repository screenshots; all ten remain available through filters |
+| `#experience` | Experience cards |
+| `#about` | Background, skills, résumé, and an expandable `#services` overview |
+| `#education` | Degree and achievements, with earlier education in an expandable section |
 | `#certifications` | Credential cards and available verification links |
-| `#education` | Education and achievements |
 | `#contact` | Contact details, social links, and an EmailJS contact form |
 
-Project filters cover DevOps / MLOps, Generative AI, Machine Learning, and Data Engineering. JavaScript also handles the mobile menu, section highlighting, and scroll animations, with a reduced-motion option for the role text.
+Project filters cover Featured, All, MLOps, Generative AI, Machine Learning, and Data Engineering. JavaScript handles the menu, accessible filter state, navigation highlighting, and contact submission. Core sections remain visible without JavaScript; all ten projects and the direct email link remain available. The mobile menu uses a 860 px breakpoint, and reduced-motion preferences disable smooth scrolling and hover motion.
+
+See [UI verification](docs/UI_VERIFICATION.md) for the responsive checks and functional test command. The [project screenshot provenance](pic/projects/README.md) identifies the original captures; these are static repository images, rather than a live status feed.
 
 ## Projects shown on the site
 
@@ -78,7 +79,7 @@ It uses port 8000, so run one preview server at a time. The Python command is th
 index.html          Main page and all portfolio sections
 styles.css          Plain CSS, responsive layout and animation styles
 script.js           Navigation, filters, animations and EmailJS submission
-pic/                Profile images
+pic/                Profile and project screenshots
 CV/                 Resume PDFs; index.html selects the download
 about.html          Legacy redirect to the hosted #about section
 projects.html       Legacy redirect to the hosted #projects section

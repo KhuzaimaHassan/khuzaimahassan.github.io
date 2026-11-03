@@ -19,8 +19,7 @@
   "jobTitle": "AI/ML Engineer & Data Scientist",
   "alumniOf": {
     "@type": "EducationalOrganization",
-    "name": "NED University of Engineering & Technology",
-    "sameAs": "https://wikipedia.org"
+    "name": "NED University of Engineering & Technology"
   },
   "award": "1st Position in Data Science Batch 2022 (CGPA: 3.885/4.00)",
   "knowsAbout": [
@@ -32,14 +31,14 @@
     "Data Engineering"
   ],
   "sameAs": [
-    "https://linkedin.com",
-    "https://github.com"
+    "https://www.linkedin.com/in/khuzaima-hassan-2004mkh",
+    "https://github.com/KhuzaimaHassan"
   ]
 }
     </script>
     <!-- Placeholder for favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>KH</text></svg>">
-    <link rel="stylesheet" href="styles.css?v=3.0" />
+    <link rel="stylesheet" href="styles.css?v=4.2" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -60,36 +59,26 @@
     <script>
       (function () {
         // Initialize EmailJS with your user ID
-        emailjs.init("U4_qxAJ-5Pc_EEiAk");
+        if (typeof emailjs !== "undefined") emailjs.init("U4_qxAJ-5Pc_EEiAk");
       })();
     </script>
   </head>
   <body>
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="loader-logo">KH</div>
-    </div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
 
     <header id="header">
       <div class="container">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
           <div class="logo"><a href="#home" style="color: inherit; text-decoration: none;">Khuzaima.</a></div>
           <ul class="nav-menu" id="primary-navigation">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#experience" class="nav-link">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
+            <li><a href="#projects" class="nav-link">Work</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="CV/Khuzaima_Hassan_.pdf" class="nav-resume">Resume <span aria-hidden="true">↗</span></a></li>
           </ul>
-          <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
+          <button type="button" class="hamburger" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -98,113 +87,265 @@
       </div>
     </header>
 
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-flex">
-            <div class="hero-text">
-              <p class="hero-intro">Hi, I'm Khuzaima Hassan.</p>
-              <h1>Building Intelligent Data Systems & <span class="highlight">AI Solutions.</span></h1>
-              <h2>
-                Specializing in <span class="typewriter-container"><span class="typed-text"></span><span class="cursor">&nbsp;</span></span>
-              </h2>
-              <p class="hero-desc">Computer Science graduate specializing in Data Science with experience in Machine Learning, Agentic AI, and building end-to-end MLOps pipelines. My projects connect models, data pipelines, APIs, and interfaces—from LLM workflows to forecasting demos—with source code and documentation you can explore.</p>
-              <div class="hero-achievements">
-                <span class="achievement-item">🎓 1st Position in Data Science Batch @ NED</span>
-                <span class="achievement-item">📊 CGPA: 3.885/4.00</span>
-                <span class="achievement-item">💼 Ex-Data Science Intern @ 10Pearls</span>
-                <span class="achievement-item">🤖 AI/ML • Generative AI • Data Science</span>
-              </div>
-              <div class="hero-action-group">
-                <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
-              </div>
-              <div class="social-icons">
-                <a href="https://github.com/KhuzaimaHassan" class="social-icon"
+    <main id="main-content" tabindex="-1">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-flex">
+        <div class="hero-text">
+          <div class="hero-identity">
+            <p class="eyebrow">AI / ML Engineer · Data Science</p>
+            <p class="hero-intro">Hi, I'm Khuzaima Hassan.</p>
+            <p class="hero-availability"><span class="availability-dot" aria-hidden="true"></span> Open to opportunities</p>
+          </div>
+          <h1 id="hero-title">Turning data into <span class="highlight">useful AI applications.</span></h1>
+          <p class="hero-desc">I build machine learning pipelines and LLM applications, connecting models, APIs, and clear interfaces.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">Explore my work <span aria-hidden="true">↗</span></a>
+            <a href="CV/Khuzaima_Hassan_.pdf" class="btn btn-secondary">Resume <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-proof"><strong>1st in Data Science at NED</strong><span aria-hidden="true"> · </span>3.885 / 4.00 CGPA</p>
+          <p class="hero-note">Former Data Science Intern at 10Pearls</p>
+          <div class="social-icons">
+                <a href="https://github.com/KhuzaimaHassan" class="social-icon" aria-label="GitHub"
                   ><i class="fab fa-github"></i
                 ></a>
                 <a
                   href="https://www.linkedin.com/in/khuzaima-hassan-2004mkh"
-                  class="social-icon"
+                  class="social-icon" aria-label="LinkedIn"
                   ><i class="fab fa-linkedin"></i
                 ></a>
-                <a href="https://leetcode.com/u/Khuzaima_Hassan/" class="social-icon">
+                <a href="https://leetcode.com/u/Khuzaima_Hassan/" class="social-icon" aria-label="LeetCode">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor">
                     <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zm4.709-4.92H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/>
                   </svg>
                 </a>
 
-                <a href="https://www.kaggle.com/khuzaimahassan" class="social-icon">
+                <a href="https://www.kaggle.com/khuzaimahassan" class="social-icon" aria-label="Kaggle">
                 <i class="fab fa-kaggle"></i>
                 </a>
               </div>
-              </div>
-            </div>
-            <div class="hero-image">
-              <img src="pic/profile1.png" alt="Khuzaima Hassan" />
-            </div>
-          </div>
         </div>
-
+        <figure class="hero-image">
+          <picture>
+            <img src="pic/portrait-blue-tie.png" alt="Khuzaima Hassan wearing a navy suit and blue tie" width="1122" height="1402" fetchpriority="high" />
+          </picture>
+          <figcaption><span class="availability-dot" aria-hidden="true"></span> Open to AI / ML opportunities</figcaption>
+        </figure>
       </div>
     </section>
-    <section id="about" class="about">
+
+    <section id="projects" class="projects">
       <div class="container">
         <div class="section-header">
-          <h2>About Me</h2>
+          <p class="eyebrow">Selected work</p><h2>From an idea to an application.</h2>
           <div class="underline"></div>
+          <p>A few projects to start with. Explore the interfaces, then follow the source code and implementation notes.</p>
         </div>
-          <div class="about-text">
-            <p class="about-lead">
-              I am a Computer Science graduate specializing in Data Science from NED University of Engineering & Technology. My interests lie at the intersection of Machine Learning, Generative AI, and intelligent data systems, where I enjoy transforming complex data into practical solutions.
-            </p>
-            <div class="about-body">
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" type="button" data-filter="featured" aria-pressed="true">Featured</button>
+          <button class="filter-btn" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="mlops">MLOps</button>
+          <button class="filter-btn" type="button" data-filter="genai">Generative AI</button>
+          <button class="filter-btn" type="button" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" type="button" data-filter="dataeng">Data Engineering</button>
+        </div>
+        <p id="project-status" class="project-status" role="status"></p>
+        <div class="project-grid"><!-- Project: Logistics Forecasting Platform -->
+          <div class="project-card" data-featured="true" data-category="mlops">
+            <figure class="project-preview project-preview-map"><img src="pic/projects/logistics.jpg" alt="Logistics Forecasting: Demand forecasts and NYC taxi-zone map" width="720" height="450" loading="lazy" decoding="async" /></figure>
+            <div class="project-content">
+              <h3>Logistics Forecasting</h3>
+              <p class="project-subtitle">Demand & ETA Forecasting Demo</p>
               <p>
-                During my journey, I have gained hands-on experience developing end-to-end AI and machine learning applications, including fraud detection systems, risk scoring platforms, predictive analytics solutions, and LLM-powered assistants. I have also worked as a Data Science Intern at 10Pearls, where I contributed to machine learning projects involving data preprocessing, feature engineering, model development, and data visualization.
+                Demand and ETA inference with Feast features and a LangGraph Ops Copilot. Scheduled jobs process a historical NYC Green TLC sample using hosted Kafka and Valkey; local development uses Redpanda and Redis.
               </p>
-              <p>
-                My technical expertise includes Python, SQL, Machine Learning, FastAPI, PostgreSQL, and modern AI technologies including LangGraph, Gemini, and Voice AI integrations (Vapi). I also have hands-on experience building robust MLOps and data streaming pipelines using tools like Feast, Redpanda, MLflow, and Prefect. I am particularly interested in building AI-powered products that bridge the gap between advanced technology and real-world business impact.
-              </p>
-              <p>
-                I am currently seeking opportunities in AI/ML Engineering, Data Science, Generative AI, and Applied Machine Learning, where I can contribute to innovative projects while continuing to grow as an engineer and problem solver.
-              </p>
-            </div>
-
-            <div class="skills-section">
-              <h3>Technical Arsenal</h3>
-              <div class="skills-grid">
-                <div class="skill-category">
-                  <h4>Data & ML</h4>
-                  <div class="skill-tags">
-                    <span>Python</span>
-                    <span>Machine Learning</span>
-                    <span>Agentic AI & LLMs</span>
-                    <span>RAG & Voice AI</span>
-                  </div>
-                </div>
-                <div class="skill-category">
-                  <h4>Engineering</h4>
-                  <div class="skill-tags">
-                    <span>SQL & DBs</span>
-                    <span>Data Engineering</span>
-                    <span>FastAPI</span>
-                  </div>
-                </div>
-                <div class="skill-category">
-                  <h4>DevOps & Tools</h4>
-                  <div class="skill-tags">
-                    <span>Docker</span>
-                    <span>LangGraph</span>
-                    <span>Feast & Redpanda</span>
-                    <span>MLflow</span>
-                  </div>
-                </div>
+              <div class="project-tags">
+                <span>FastAPI</span>
+                <span>Feast</span>
+                <span>Kafka</span>
+                <span>LangGraph</span>
+              </div>
+              <div class="project-links">
+                <a href="https://logistics-forecasting-platform.streamlit.app/" class="btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/logistics-forecasting-platform" class="btn-small btn-secondary-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source</a>
               </div>
             </div>
-
-            <a href="CV/Khuzaima_Hassan_.pdf" class="btn btn-primary"><i class="fas fa-download" style="margin-right: 8px;"></i>Download Resume</a>
+          </div><!-- Project: Quasar -->
+          <div class="project-card" data-featured="true" data-category="genai">
+            <figure class="project-preview"><img src="pic/projects/quasar.png" alt="Quasar: Streaming chat and source-aware developer workspace" width="720" height="450" loading="lazy" decoding="async" /></figure>
+            <div class="project-content">
+              <h3>Quasar</h3>
+              <p class="project-subtitle">Full-Stack AI Developer Workspace</p>
+              <p>
+                AI developer workspace with multi-model streaming chat, document answers with citations, and memory. Agent workflows pause for approval before executing supported tools.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>FastAPI</span>
+                <span>LangGraph</span>
+                <span>pgvector</span>
+              </div>
+              <div class="project-links">
+                <a href="https://qausar.vercel.app" class="btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/Quasar" class="btn-small btn-secondary-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </div><!-- Project: Job Finder AI -->
+          <div class="project-card" data-featured="true" data-category="genai">
+            <figure class="project-preview"><img src="pic/projects/job-finder.jpg" alt="Job Finder AI: AI application preparation tools" width="720" height="450" loading="lazy" decoding="async" /></figure>
+            <div class="project-content">
+              <h3>Job Finder AI</h3>
+              <p class="project-subtitle">AI-powered Job Platform</p>
+              <p>
+                Match jobs against a profile or resume, search remote tech and Pakistan listings, prepare application materials, and track applications. Built with Next.js, FastAPI, Supabase, and Gemini.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>FastAPI</span>
+                <span>Gemini AI</span>
+                <span>Supabase</span>
+              </div>
+              <div class="project-links">
+                <a href="https://ai-jobfinder.vercel.app/" class="btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/job-finder-ai" class="btn-small btn-secondary-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </div><!-- Project 2: AI Academic Mentor -->
+          <div class="project-card" data-featured="true" data-category="genai">
+            <figure class="project-preview project-preview-dashboard"><img src="pic/projects/academic-mentor.jpg" alt="AI Academic Mentor: Student outcome dashboard" width="720" height="450" loading="lazy" decoding="async" /></figure>
+            <div class="project-content">
+              <h3>AI Academic Mentor</h3>
+              <p class="project-subtitle">LangGraph & RAG Architecture</p>
+              <p>
+                Prototype combining OULAD student classification, a LangGraph workflow, and academic guidance retrieval to draft mentoring reports in Streamlit. Suggested advice requires human review.
+              </p>
+              <div class="project-tags">
+                <span>LangGraph</span>
+                <span>RAG</span>
+                <span>Streamlit</span>
+                <span>Groq</span>
+              </div>
+              <div class="project-links">
+                <a href="https://ai-academic-mentor.streamlit.app/" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/AI-Academic-Mentor" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </div><!-- Project: Voice Patient Registration -->
+          <div class="project-card" data-category="genai">
+            <div class="project-content">
+              <h3>Voice Patient Registration</h3>
+              <p class="project-subtitle">Voice Intake Prototype</p>
+              <p>
+                Configured Vapi tool calls reach a FastAPI webhook, which validates registration details and saves them in PostgreSQL. Conversation behavior depends on the external voice assistant configuration.
+              </p>
+              <div class="project-tags">
+                <span>FastAPI</span>
+                <span>Vapi.ai</span>
+                <span>Supabase</span>
+                <span>Pydantic</span>
+              </div>
+              <div class="project-links">
+                <a href="https://voice-patient-registration-b4n2.onrender.com/docs" class="btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live API</a>
+                <a href="https://github.com/KhuzaimaHassan/voice-patient-registration" class="btn-small btn-secondary-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </div><!-- Project: Risk Scoring Platform -->
+          <div class="project-card" data-category="ml">
+            <div class="project-content">
+              <h3>Risk Scoring Platform</h3>
+              <p class="project-subtitle">Transaction Scoring Demo</p>
+              <p>
+                Educational demo connecting authenticated transaction scoring, historical features, saved prediction records, and a React analyst dashboard. Hosted scoring requires private administrator credentials; measured performance is documented in the repository.
+              </p>
+              <div class="project-tags">
+                <span>FastAPI</span>
+                <span>React</span>
+                <span>Scikit-learn</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://risk-scoring-platform-sg.onrender.com/ui/" class="btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/Risk-Scoring-Platform" class="btn-small btn-secondary-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </div><!-- Project 1: 10 Pearls AQI Predictor -->
+          <div class="project-card" data-category="mlops">
+            <div class="project-content">
+              <h3>10 Pearls AQI Predictor</h3>
+              <p class="project-subtitle">Scheduled AQI Forecasting</p>
+              <p>
+                Karachi air quality forecasting with Hopsworks features and models, hourly data updates, and daily training workflows in GitHub Actions. A hosted dashboard presents forecasts and historical trends.
+              </p>
+              <div class="project-tags">
+                <span>ML</span>
+                <span>Hopsworks</span>
+                <span>GitHub Actions</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://huggingface.co/spaces/KhuzaimaHassan/10pearls-aqi-predictor" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/10-Pearls-AQI-Predictor" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </div><!-- Project 3: Insight Agent -->
+          <div class="project-card" data-category="genai">
+            <div class="project-content">
+              <h3>Insight Agent</h3>
+              <p class="project-subtitle">Exploratory Data Analysis Assistant</p>
+              <p>
+                Streamlit assistant for dataset exploration, charts, and HTML reports. Gemini generates explanations from supplied dataset samples and summary statistics; the chat does not execute generated analysis code.
+              </p>
+              <div class="project-tags">
+                <span>Gemini</span>
+                <span>Python</span>
+                <span>Data Analysis</span>
+              </div>
+              <div class="project-links">
+                <a href="https://insight-agent-ag.streamlit.app/" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/KhuzaimaHassan/Insight-Agent" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </div><!-- Project 4: Fraud Detection -->
+          <div class="project-card" data-category="ml">
+            <div class="project-content">
+              <h3>Fraud Detection System</h3>
+              <p class="project-subtitle">Classification Models</p>
+              <p>
+                Financial fraud classification study with saved model comparisons and a Streamlit demo. The evaluation script loads existing classifiers; reproducing results requires the expected datasets and model artifacts.
+              </p>
+              <div class="project-tags">
+                <span>Scikit-learn</span>
+                <span>Classification</span>
+                <span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/KhuzaimaHassan/Fraud-Detection" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div><!-- Project 6: Data Warehousing & BI -->
+          <div class="project-card" data-category="dataeng">
+            <div class="project-content">
+              <h3>Data Warehousing & BI</h3>
+              <p class="project-subtitle">End-to-end ETL Architecture</p>
+              <p>
+                E-commerce coursework covering ETL, dimensional modeling, clustering, and Power BI reporting. Existing warehouse results need customer-grain validation before they can support business conclusions.
+              </p>
+              <div class="project-tags">
+                <span>SQL</span>
+                <span>ETL</span>
+                <span>Data Modeling</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/KhuzaimaHassan/Data-Warehousing-and-Business-Intelligence" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
           </div>
+
+        </div>
+        <div class="project-footer">
+          <button type="button" class="btn btn-secondary" id="view-all-projects">View all 10 projects <span aria-hidden="true">↗</span></button>
+          <p>Hosted demos may sleep or require sign-in. Each repository explains setup and limitations.</p>
+        </div>
       </div>
     </section>
 
@@ -267,13 +408,51 @@
       </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="about" class="about">
       <div class="container">
         <div class="section-header">
-          <h2>Core Expertise</h2>
+          <p class="eyebrow">About & skills</p><h2>A practical approach to AI.</h2>
           <div class="underline"></div>
         </div>
-        <div class="service-grid">
+          <div class="about-text">
+            <p class="about-lead">I am a Computer Science graduate from NED University, specializing in Data Science. I enjoy connecting machine learning and generative AI with the engineering that makes an application usable.</p>
+            <div class="about-body"><p>My work spans forecasting, fraud-risk scoring, data pipelines, and LLM assistants. At 10Pearls, I worked on data preparation, feature engineering, model development, and visualization.</p><p>I am looking for AI/ML Engineering, Data Science, and applied GenAI roles where I can build, learn, and contribute.</p></div>
+
+            <div class="skills-section">
+              <h3>Tools I work with</h3>
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h4>Data & ML</h4>
+                  <div class="skill-tags">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Agentic AI & LLMs</span>
+                    <span>RAG & Voice AI</span>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <h4>Engineering</h4>
+                  <div class="skill-tags">
+                    <span>SQL & DBs</span>
+                    <span>Data Engineering</span>
+                    <span>FastAPI</span>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <h4>DevOps & Tools</h4>
+                  <div class="skill-tags">
+                    <span>Docker</span>
+                    <span>LangGraph</span>
+                    <span>Feast & Redpanda</span>
+                    <span>MLflow</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="CV/Khuzaima_Hassan_.pdf" class="btn btn-primary"><i class="fas fa-download" style="margin-right: 8px;"></i>Download Resume</a>
+          </div>
+        <details id="services" class="expertise-details"><summary>Explore my areas of work</summary><div class="service-grid">
           <div class="service-card">
             <div class="service-icon">
               <i class="fas fa-brain"></i>
@@ -319,320 +498,14 @@
               Designing robust data architectures and automated ETL pipelines using PostgreSQL, BigQuery, and Python to ensure seamless data flow.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2>Recent Projects</h2>
-          <div class="underline"></div>
-          <p>Explore the demos and source code below. Hosted demos may sleep or require sign-in; each repository explains setup, evidence, and limitations.</p>
-        </div>
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="mlops">DevOps / MLOps</button>
-          <button class="filter-btn" data-filter="genai">Generative AI</button>
-          <button class="filter-btn" data-filter="ml">Machine Learning</button>
-          <button class="filter-btn" data-filter="dataeng">Data Engineering</button>
-        </div>
-        <div class="project-grid">
-          <!-- Project: Logistics Forecasting Platform -->
-          <div class="project-card" data-category="mlops">
-            <div class="project-content">
-              <h3>Logistics Forecasting</h3>
-              <p class="project-subtitle">Demand & ETA Forecasting Demo</p>
-              <p>
-                Demand and ETA inference with Feast features and a LangGraph Ops Copilot. Scheduled jobs process a historical NYC Green TLC sample using hosted Kafka and Valkey; local development uses Redpanda and Redis.
-              </p>
-              <div class="project-tags">
-                <span>FastAPI</span>
-                <span>Feast</span>
-                <span>Kafka</span>
-                <span>LangGraph</span>
-              </div>
-              <div class="project-links">
-                <a href="https://logistics-forecasting-platform.streamlit.app/" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                <a href="https://github.com/KhuzaimaHassan/logistics-forecasting-platform" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project: Quasar -->
-          <div class="project-card" data-category="genai">
-            <div class="project-content">
-              <h3>Quasar</h3>
-              <p class="project-subtitle">Full-Stack AI Developer Workspace</p>
-              <p>
-                AI developer workspace with multi-model streaming chat, document answers with citations, and memory. Agent workflows pause for approval before executing supported tools.
-              </p>
-              <div class="project-tags">
-                <span>Next.js</span>
-                <span>FastAPI</span>
-                <span>LangGraph</span>
-                <span>pgvector</span>
-              </div>
-              <div class="project-links">
-                <a href="https://qausar.vercel.app" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                <a href="https://github.com/KhuzaimaHassan/Quasar" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project: Voice Patient Registration -->
-          <div class="project-card" data-category="genai">
-            <div class="project-content">
-              <h3>Voice Patient Registration</h3>
-              <p class="project-subtitle">Voice Intake Prototype</p>
-              <p>
-                Configured Vapi tool calls reach a FastAPI webhook, which validates registration details and saves them in PostgreSQL. Conversation behavior depends on the external voice assistant configuration.
-              </p>
-              <div class="project-tags">
-                <span>FastAPI</span>
-                <span>Vapi.ai</span>
-                <span>Supabase</span>
-                <span>Pydantic</span>
-              </div>
-              <div class="project-links">
-                <a href="https://voice-patient-registration-b4n2.onrender.com/docs" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live API</a>
-                <a href="https://github.com/KhuzaimaHassan/voice-patient-registration" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project: Job Finder AI -->
-          <div class="project-card" data-category="genai">
-            <div class="project-content">
-              <h3>Job Finder AI</h3>
-              <p class="project-subtitle">AI-powered Job Platform</p>
-              <p>
-                Match jobs against a profile or resume, search remote tech and Pakistan listings, prepare application materials, and track applications. Built with Next.js, FastAPI, Supabase, and Gemini.
-              </p>
-              <div class="project-tags">
-                <span>Next.js</span>
-                <span>FastAPI</span>
-                <span>Gemini AI</span>
-                <span>Supabase</span>
-              </div>
-              <div class="project-links">
-                <a href="https://ai-jobfinder.vercel.app/" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                <a href="https://github.com/KhuzaimaHassan/job-finder-ai" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project: Risk Scoring Platform -->
-          <div class="project-card" data-category="ml">
-            <div class="project-content">
-              <h3>Risk Scoring Platform</h3>
-              <p class="project-subtitle">Transaction Scoring Demo</p>
-              <p>
-                Educational demo connecting authenticated transaction scoring, historical features, saved prediction records, and a React analyst dashboard. Hosted scoring requires private administrator credentials; measured performance is documented in the repository.
-              </p>
-              <div class="project-tags">
-                <span>FastAPI</span>
-                <span>React</span>
-                <span>Scikit-learn</span>
-                <span>PostgreSQL</span>
-              </div>
-              <div class="project-links">
-                <a href="https://risk-scoring-platform-sg.onrender.com/ui/" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                <a href="https://github.com/KhuzaimaHassan/Risk-Scoring-Platform" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 1: 10 Pearls AQI Predictor -->
-          <div class="project-card" data-category="mlops">
-            <div class="project-content">
-              <h3>10 Pearls AQI Predictor</h3>
-              <p class="project-subtitle">Scheduled AQI Forecasting</p>
-              <p>
-                Karachi air quality forecasting with Hopsworks features and models, hourly data updates, and daily training workflows in GitHub Actions. A hosted dashboard presents forecasts and historical trends.
-              </p>
-              <div class="project-tags">
-                <span>ML</span>
-                <span>Hopsworks</span>
-                <span>GitHub Actions</span>
-                <span>Python</span>
-              </div>
-              <div class="project-links">
-                <a href="https://huggingface.co/spaces/KhuzaimaHassan/10pearls-aqi-predictor" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                <a href="https://github.com/KhuzaimaHassan/10-Pearls-AQI-Predictor" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2: AI Academic Mentor -->
-          <div class="project-card" data-category="genai">
-            <div class="project-content">
-              <h3>AI Academic Mentor</h3>
-              <p class="project-subtitle">LangGraph & RAG Architecture</p>
-              <p>
-                Prototype combining OULAD student classification, a LangGraph workflow, and academic guidance retrieval to draft mentoring reports in Streamlit. Suggested advice requires human review.
-              </p>
-              <div class="project-tags">
-                <span>LangGraph</span>
-                <span>RAG</span>
-                <span>Streamlit</span>
-                <span>Groq</span>
-              </div>
-              <div class="project-links">
-                <a href="https://ai-academic-mentor.streamlit.app/" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                <a href="https://github.com/KhuzaimaHassan/AI-Academic-Mentor" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: Insight Agent -->
-          <div class="project-card" data-category="genai">
-            <div class="project-content">
-              <h3>Insight Agent</h3>
-              <p class="project-subtitle">Exploratory Data Analysis Assistant</p>
-              <p>
-                Streamlit assistant for dataset exploration, charts, and HTML reports. Gemini generates explanations from supplied dataset samples and summary statistics; the chat does not execute generated analysis code.
-              </p>
-              <div class="project-tags">
-                <span>Gemini</span>
-                <span>Python</span>
-                <span>Data Analysis</span>
-              </div>
-              <div class="project-links">
-                <a href="https://insight-agent-ag.streamlit.app/" class="btn-small"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                <a href="https://github.com/KhuzaimaHassan/Insight-Agent" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4: Fraud Detection -->
-          <div class="project-card" data-category="ml">
-            <div class="project-content">
-              <h3>Fraud Detection System</h3>
-              <p class="project-subtitle">Classification Models</p>
-              <p>
-                Financial fraud classification study with saved model comparisons and a Streamlit demo. The evaluation script loads existing classifiers; reproducing results requires the expected datasets and model artifacts.
-              </p>
-              <div class="project-tags">
-                <span>Scikit-learn</span>
-                <span>Classification</span>
-                <span>Python</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/KhuzaimaHassan/Fraud-Detection" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source Code</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6: Data Warehousing & BI -->
-          <div class="project-card" data-category="dataeng">
-            <div class="project-content">
-              <h3>Data Warehousing & BI</h3>
-              <p class="project-subtitle">End-to-end ETL Architecture</p>
-              <p>
-                E-commerce coursework covering ETL, dimensional modeling, clustering, and Power BI reporting. Existing warehouse results need customer-grain validation before they can support business conclusions.
-              </p>
-              <div class="project-tags">
-                <span>SQL</span>
-                <span>ETL</span>
-                <span>Data Modeling</span>
-                <span>PostgreSQL</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/KhuzaimaHassan/Data-Warehousing-and-Business-Intelligence" class="btn-small btn-secondary-small"><i class="fab fa-github"></i> Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="certifications" class="certifications">
-      <div class="container">
-        <div class="section-header">
-          <h2>Certifications</h2>
-          <div class="underline"></div>
-        </div>
-        <div class="cert-grid">
-          <!-- Certification 1 -->
-          <div class="cert-card">
-            <div class="cert-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Google Data Analytics Professional Certificate</h3>
-            <p class="cert-issuer">Coursera</p>
-            <a href="https://www.credly.com/badges/81b92b40-b8a5-4532-9d9a-5b9de81f1cca" target="_blank" class="cert-link">
-              <i class="fas fa-external-link-alt"></i> Verify Certificate
-            </a>
-          </div>
-
-          <!-- Certification 2 -->
-          <div class="cert-card">
-            <div class="cert-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Data Engineering Essentials</h3>
-            <p class="cert-issuer">Coursera</p>
-            <a href="https://www.credly.com/badges/7c91c588-8dd4-4c6c-9566-531b4b2f9e23" target="_blank" class="cert-link">
-              <i class="fas fa-external-link-alt"></i> Verify Certificate
-            </a>
-          </div>
-
-          <!-- Certification 3 -->
-          <div class="cert-card">
-            <div class="cert-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Machine Learning Engineer</h3>
-            <p class="cert-issuer">DataCamp</p>
-            <a href="https://www.datacamp.com/statement-of-accomplishment/track/da6fc5ab0b73a68cf9b7d44bb13da0d3854fbc4f?raw=1" target="_blank" class="cert-link">
-              <i class="fas fa-external-link-alt"></i> Verify Certificate
-            </a>
-          </div>
-
-          <!-- Certification 4 -->
-          <div class="cert-card">
-            <div class="cert-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Machine Learning Scientist in Python</h3>
-            <p class="cert-issuer">DataCamp</p>
-            <div class="cert-link-placeholder">
-              <i class="fas fa-check-circle"></i> Certified
-            </div>
-          </div>
-
-          <!-- Certification 5 -->
-          <div class="cert-card">
-            <div class="cert-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Python for Data Science, AI & Development</h3>
-            <p class="cert-issuer">Coursera</p>
-            <a href="https://www.credly.com/badges/2b1a9a1f-8c03-4168-801d-5a497751c2cf" target="_blank" class="cert-link">
-              <i class="fas fa-external-link-alt"></i> Verify Certificate
-            </a>
-          </div>
-
-          <!-- Certification 6 -->
-          <div class="cert-card">
-            <div class="cert-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Huawei Certified ICT Associate (HCIA) - Datacom</h3>
-            <p class="cert-issuer">Huawei</p>
-            <a href="https://github.com/KhuzaimaHassan/CT-376-Computer-Communication-Network/blob/main/Certification_Certificate.pdf" target="_blank" class="cert-link">
-              <i class="fas fa-external-link-alt"></i> Verify Certificate
-            </a>
-          </div>
-        </div>
+        </div></details>
       </div>
     </section>
 
     <section id="education" class="education">
       <div class="container">
         <div class="section-header">
-          <h2>Education</h2>
+          <p class="eyebrow">Education</p><h2>A foundation in data science.</h2>
           <div class="underline"></div>
         </div>
         <div class="timeline">
@@ -655,6 +528,7 @@
             </div>
           </div>
 
+          <details class="education-history"><summary>Earlier education</summary>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
@@ -687,13 +561,97 @@
               </ul>
             </div>
           </div>
+          </details>
         </div>
       </div>
     </section>
+
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Continued learning</p><h2>Credentials & certifications.</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="cert-grid">
+          <!-- Certification 1 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Google Data Analytics Professional Certificate</h3>
+            <p class="cert-issuer">Coursera</p>
+            <a href="https://www.credly.com/badges/81b92b40-b8a5-4532-9d9a-5b9de81f1cca" target="_blank" rel="noopener noreferrer" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
+          </div>
+
+          <!-- Certification 2 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Data Engineering Essentials</h3>
+            <p class="cert-issuer">Coursera</p>
+            <a href="https://www.credly.com/badges/7c91c588-8dd4-4c6c-9566-531b4b2f9e23" target="_blank" rel="noopener noreferrer" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
+          </div>
+
+          <!-- Certification 3 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Machine Learning Engineer</h3>
+            <p class="cert-issuer">DataCamp</p>
+            <a href="https://www.datacamp.com/statement-of-accomplishment/track/da6fc5ab0b73a68cf9b7d44bb13da0d3854fbc4f?raw=1" target="_blank" rel="noopener noreferrer" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
+          </div>
+
+          <!-- Certification 4 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Machine Learning Scientist in Python</h3>
+            <p class="cert-issuer">DataCamp</p>
+            <div class="cert-link-placeholder">
+              <i class="fas fa-check-circle"></i> Certified
+            </div>
+          </div>
+
+          <!-- Certification 5 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Python for Data Science, AI & Development</h3>
+            <p class="cert-issuer">Coursera</p>
+            <a href="https://www.credly.com/badges/2b1a9a1f-8c03-4168-801d-5a497751c2cf" target="_blank" rel="noopener noreferrer" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
+          </div>
+
+          <!-- Certification 6 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Huawei Certified ICT Associate (HCIA) - Datacom</h3>
+            <p class="cert-issuer">Huawei</p>
+            <a href="https://github.com/KhuzaimaHassan/CT-376-Computer-Communication-Network/blob/main/Certification_Certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+              <i class="fas fa-external-link-alt"></i> Verify Certificate
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-header">
-          <h2>Get In Touch</h2>
+          <p class="eyebrow">Contact</p><h2>Let’s build something useful.</h2>
           <div class="underline"></div>
         </div>
         <div class="contact-wrapper">
@@ -710,55 +668,61 @@
               </div>
               <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <p>khuzaimahassan52@gmail.com</p>
+                <p><a href="mailto:khuzaimahassan52@gmail.com">khuzaimahassan52@gmail.com</a></p>
               </div>
               <div class="contact-item">
                 <i class="fas fa-phone"></i>
-                <p>+923213937589</p>
+                <p><a href="tel:+923213937589">+92 321 3937589</a></p>
               </div>
             </div>
             <div class="social-icons">
-              <a href="https://github.com/KhuzaimaHassan" class="social-icon"
+              <a href="https://github.com/KhuzaimaHassan" class="social-icon" aria-label="GitHub"
                 ><i class="fab fa-github"></i
               ></a>
               <a
                 href="https://www.linkedin.com/in/khuzaima-hassan-2004mkh"
-                class="social-icon"
+                class="social-icon" aria-label="LinkedIn"
                 ><i class="fab fa-linkedin"></i
               ></a>
 
-              <a href="https://leetcode.com/u/Khuzaima_Hassan/" class="social-icon">
+              <a href="https://leetcode.com/u/Khuzaima_Hassan/" class="social-icon" aria-label="LeetCode">
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor">
                <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zm4.709-4.92H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/>
                </svg>
               </a>
-              <a href="https://www.kaggle.com/khuzaimahassan" class="social-icon">
+              <a href="https://www.kaggle.com/khuzaimahassan" class="social-icon" aria-label="Kaggle">
                 <i class="fab fa-kaggle"></i>
               </a>
             </div>
+            <button class="btn btn-secondary feedback-trigger" id="feedback-trigger" type="button" hidden>Open quick chat <span aria-hidden="true">↗</span></button>
           </div>
           <div class="contact-form">
             <h3>Send Me a Message</h3>
+            <noscript><p>The contact form needs JavaScript. <a href="mailto:khuzaimahassan52@gmail.com">Email me directly</a> instead.</p></noscript>
             <form id="contactForm">
+              <p class="form-note">Or <a href="mailto:khuzaimahassan52@gmail.com">send me an email directly</a>.</p>
               <div class="form-group">
+                <label for="name">Your name</label>
                 <input
                   type="text"
-                  id="name"
+                  id="name" autocomplete="name"
                   name="name"
                   placeholder="Your Name"
                   required
                 />
               </div>
               <div class="form-group">
+                <label for="email">Email address</label>
                 <input
                   type="email"
-                  id="email"
+                  id="email" autocomplete="email"
                   name="email"
                   placeholder="Your Email"
                   required
                 />
               </div>
               <div class="form-group">
+                <label for="subject">Subject</label>
                 <input
                   type="text"
                   id="subject"
@@ -768,6 +732,7 @@
                 />
               </div>
               <div class="form-group">
+                <label for="message">Message</label>
                 <textarea
                   id="message"
                   name="message"
@@ -775,6 +740,7 @@
                   required
                 ></textarea>
               </div>
+              <p id="contact-status" class="form-status" role="status"></p>
               <button type="submit" class="btn btn-primary">
                 Send Message
               </button>
@@ -783,19 +749,20 @@
         </div>
       </div>
     </section>
+    </main>
 
     <footer>
       <div class="container">
         <div class="footer-content">
           <p>&copy; 2026 Khuzaima Hassan. All Rights Reserved.</p>
           <div class="back-to-top">
-            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            <a href="#home" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="script.js?v=3.0"></script>
+    <script src="script.js?v=4.0"></script>
     <script src="https://qualzo.app/widget.js" data-user="cms5zwtpl0532jqymgqnmp3t4"></script>
   </body>
 </html>
