@@ -108,7 +108,7 @@
               <h2>
                 Specializing in <span class="typewriter-container"><span class="typed-text"></span><span class="cursor">&nbsp;</span></span>
               </h2>
-              <p class="hero-desc">Computer Science graduate specializing in Data Science with experience in Machine Learning, Agentic AI, and building end-to-end MLOps pipelines. Passionate about engineering production-ready AI applications—from multi-agent workflows to real-time forecasting platforms—that transform complex data into real-world business value.</p>
+              <p class="hero-desc">Computer Science graduate specializing in Data Science with experience in Machine Learning, Agentic AI, and building end-to-end MLOps pipelines. My projects connect models, data pipelines, APIs, and interfaces—from LLM workflows to forecasting demos—with source code and documentation you can explore.</p>
               <div class="hero-achievements">
                 <span class="achievement-item">🎓 1st Position in Data Science Batch @ NED</span>
                 <span class="achievement-item">📊 CGPA: 3.885/4.00</span>
@@ -134,7 +134,7 @@
                     <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zm4.709-4.92H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/>
                   </svg>
                 </a>
-              
+
                 <a href="https://www.kaggle.com/khuzaimahassan" class="social-icon">
                 <i class="fab fa-kaggle"></i>
                 </a>
@@ -328,6 +328,7 @@
         <div class="section-header">
           <h2>Recent Projects</h2>
           <div class="underline"></div>
+          <p>Explore the demos and source code below. Hosted demos may sleep or require sign-in; each repository explains setup, evidence, and limitations.</p>
         </div>
         <div class="project-filters">
           <button class="filter-btn active" data-filter="all">All</button>
@@ -341,14 +342,14 @@
           <div class="project-card" data-category="mlops">
             <div class="project-content">
               <h3>Logistics Forecasting</h3>
-              <p class="project-subtitle">Demand & ETA Prediction</p>
+              <p class="project-subtitle">Demand & ETA Forecasting Demo</p>
               <p>
-                Production-grade MLOps platform forecasting NYC taxi demand in real-time. Features Feast feature store, Redpanda streaming, sub-15ms Redis serving, and a LangGraph Ops Copilot.
+                Demand and ETA inference with Feast features and a LangGraph Ops Copilot. Scheduled jobs process a historical NYC Green TLC sample using hosted Kafka and Valkey; local development uses Redpanda and Redis.
               </p>
               <div class="project-tags">
                 <span>FastAPI</span>
                 <span>Feast</span>
-                <span>Redpanda</span>
+                <span>Kafka</span>
                 <span>LangGraph</span>
               </div>
               <div class="project-links">
@@ -364,7 +365,7 @@
               <h3>Quasar</h3>
               <p class="project-subtitle">Full-Stack AI Developer Workspace</p>
               <p>
-                Production multi-agent workspace with multi-model streaming chat, end-to-end RAG document engine with cited sources, long-term memory, and GitHub tool execution.
+                AI developer workspace with multi-model streaming chat, document answers with citations, and memory. Agent workflows pause for approval before executing supported tools.
               </p>
               <div class="project-tags">
                 <span>Next.js</span>
@@ -373,7 +374,7 @@
                 <span>pgvector</span>
               </div>
               <div class="project-links">
-                <a href="https://quasar-sand.vercel.app" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://qausar.vercel.app" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                 <a href="https://github.com/KhuzaimaHassan/Quasar" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
               </div>
             </div>
@@ -383,9 +384,9 @@
           <div class="project-card" data-category="genai">
             <div class="project-content">
               <h3>Voice Patient Registration</h3>
-              <p class="project-subtitle">AI-driven Voice Agent</p>
+              <p class="project-subtitle">Voice Intake Prototype</p>
               <p>
-                A production-ready voice AI intake agent and backend pipeline. Callers speak with a conversational agent to register details directly into a cloud PostgreSQL database.
+                Configured Vapi tool calls reach a FastAPI webhook, which validates registration details and saves them in PostgreSQL. Conversation behavior depends on the external voice assistant configuration.
               </p>
               <div class="project-tags">
                 <span>FastAPI</span>
@@ -406,7 +407,7 @@
               <h3>Job Finder AI</h3>
               <p class="project-subtitle">AI-powered Job Platform</p>
               <p>
-                Full-stack job matching platform that analyzes resumes, finds best-fit jobs, and prepares candidates for interviews using Google Gemini AI and Next.js.
+                Match jobs against a profile or resume, search remote tech and Pakistan listings, prepare application materials, and track applications. Built with Next.js, FastAPI, Supabase, and Gemini.
               </p>
               <div class="project-tags">
                 <span>Next.js</span>
@@ -415,7 +416,7 @@
                 <span>Supabase</span>
               </div>
               <div class="project-links">
-                <a href="https://job-finder-ai-kappa.vercel.app" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://ai-jobfinder.vercel.app/" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                 <a href="https://github.com/KhuzaimaHassan/job-finder-ai" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
               </div>
             </div>
@@ -425,9 +426,9 @@
           <div class="project-card" data-category="ml">
             <div class="project-content">
               <h3>Risk Scoring Platform</h3>
-              <p class="project-subtitle">Fraud Risk Pipeline</p>
+              <p class="project-subtitle">Transaction Scoring Demo</p>
               <p>
-                Production-style fraud risk scoring platform featuring real-time transaction scoring with sub-50ms latency, an interactive React dashboard, and ML feature engineering.
+                Educational demo connecting authenticated transaction scoring, historical features, saved prediction records, and a React analyst dashboard. Hosted scoring requires private administrator credentials; measured performance is documented in the repository.
               </p>
               <div class="project-tags">
                 <span>FastAPI</span>
@@ -436,7 +437,7 @@
                 <span>PostgreSQL</span>
               </div>
               <div class="project-links">
-                <a href="https://risk-scoring-platform-9h5e.onrender.com/ui/" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://risk-scoring-platform-sg.onrender.com/ui/" class="btn-small" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                 <a href="https://github.com/KhuzaimaHassan/Risk-Scoring-Platform" class="btn-small btn-secondary-small" target="_blank"><i class="fab fa-github"></i> Source</a>
               </div>
             </div>
@@ -446,9 +447,9 @@
           <div class="project-card" data-category="mlops">
             <div class="project-content">
               <h3>10 Pearls AQI Predictor</h3>
-              <p class="project-subtitle">Production MLOps Pipeline</p>
+              <p class="project-subtitle">Scheduled AQI Forecasting</p>
               <p>
-                Production-grade air quality forecasting system using ML models and automated MLOps pipeline. Features real-time predictions deployed via GitHub Actions and Hopsworks feature store.
+                Karachi air quality forecasting with Hopsworks features and models, hourly data updates, and daily training workflows in GitHub Actions. A hosted dashboard presents forecasts and historical trends.
               </p>
               <div class="project-tags">
                 <span>ML</span>
@@ -469,7 +470,7 @@
               <h3>AI Academic Mentor</h3>
               <p class="project-subtitle">LangGraph & RAG Architecture</p>
               <p>
-                Intelligent student support system built with LangGraph and RAG architecture. Provides personalized academic guidance using multi-agent workflows and vector-based knowledge retrieval.
+                Prototype combining OULAD student classification, a LangGraph workflow, and academic guidance retrieval to draft mentoring reports in Streamlit. Suggested advice requires human review.
               </p>
               <div class="project-tags">
                 <span>LangGraph</span>
@@ -488,12 +489,12 @@
           <div class="project-card" data-category="genai">
             <div class="project-content">
               <h3>Insight Agent</h3>
-              <p class="project-subtitle">Automated Data Analysis</p>
+              <p class="project-subtitle">Exploratory Data Analysis Assistant</p>
               <p>
-                AI-powered data insights generator that autonomously analyzes datasets and produces actionable business intelligence. Leverages LLM agents for automated exploratory data analysis.
+                Streamlit assistant for dataset exploration, charts, and HTML reports. Gemini generates explanations from supplied dataset samples and summary statistics; the chat does not execute generated analysis code.
               </p>
               <div class="project-tags">
-                <span>LLM Agents</span>
+                <span>Gemini</span>
                 <span>Python</span>
                 <span>Data Analysis</span>
               </div>
@@ -510,7 +511,7 @@
               <h3>Fraud Detection System</h3>
               <p class="project-subtitle">Classification Models</p>
               <p>
-                Comparative analysis of classification models for financial fraud detection. Implemented and benchmarked multiple ML algorithms to identify optimal performance metrics for production deployment.
+                Financial fraud classification study with saved model comparisons and a Streamlit demo. The evaluation script loads existing classifiers; reproducing results requires the expected datasets and model artifacts.
               </p>
               <div class="project-tags">
                 <span>Scikit-learn</span>
@@ -529,7 +530,7 @@
               <h3>Data Warehousing & BI</h3>
               <p class="project-subtitle">End-to-end ETL Architecture</p>
               <p>
-                End-to-end data warehouse implementation with dimensional modeling and ETL pipelines. Designed star schema architecture for optimized analytical queries and business reporting.
+                E-commerce coursework covering ETL, dimensional modeling, clustering, and Power BI reporting. Existing warehouse results need customer-grain validation before they can support business conclusions.
               </p>
               <div class="project-tags">
                 <span>SQL</span>
@@ -545,7 +546,7 @@
         </div>
       </div>
     </section>
-    
+
     <section id="certifications" class="certifications">
       <div class="container">
         <div class="section-header">
@@ -627,7 +628,7 @@
         </div>
       </div>
     </section>
-    
+
     <section id="education" class="education">
       <div class="container">
         <div class="section-header">
@@ -653,7 +654,7 @@
               </ul>
             </div>
           </div>
-          
+
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
