@@ -38,7 +38,7 @@
     </script>
     <!-- Placeholder for favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>KH</text></svg>">
-    <link rel="stylesheet" href="styles.css?v=4.0" />
+    <link rel="stylesheet" href="styles.css?v=4.1" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -91,8 +91,11 @@
     <section id="home" class="hero" aria-labelledby="hero-title">
       <div class="container hero-flex">
         <div class="hero-text">
-          <p class="eyebrow">AI / ML Engineer · Data Science</p>
-          <p class="hero-intro">Hi, I'm Khuzaima Hassan.</p>
+          <div class="hero-identity">
+            <p class="eyebrow">AI / ML Engineer · Data Science</p>
+            <p class="hero-intro">Hi, I'm Khuzaima Hassan.</p>
+            <p class="hero-availability"><span class="availability-dot" aria-hidden="true"></span> Open to opportunities</p>
+          </div>
           <h1 id="hero-title">Turning data into <span class="highlight">useful AI applications.</span></h1>
           <p class="hero-desc">I build machine learning pipelines and LLM applications, connecting models, APIs, and clear interfaces.</p>
           <div class="hero-btns">
@@ -122,7 +125,10 @@
               </div>
         </div>
         <figure class="hero-image">
-          <img src="pic/profile1.png" alt="Khuzaima Hassan" width="350" height="430" fetchpriority="high" />
+          <picture>
+            <source media="(max-width: 860px)" srcset="pic/profile.png" />
+            <img src="pic/profile1.png" alt="Khuzaima Hassan" width="350" height="430" fetchpriority="high" />
+          </picture>
           <figcaption><span class="availability-dot" aria-hidden="true"></span> Open to AI / ML opportunities</figcaption>
         </figure>
       </div>
@@ -146,7 +152,7 @@
         <p id="project-status" class="project-status" role="status"></p>
         <div class="project-grid"><!-- Project: Logistics Forecasting Platform -->
           <div class="project-card" data-featured="true" data-category="mlops">
-            <figure class="project-preview"><img src="pic/projects/logistics.jpg" alt="Logistics Forecasting: Demand forecasts and NYC taxi-zone map" width="720" height="450" loading="lazy" decoding="async" /><figcaption>Repository screenshot</figcaption></figure>
+            <figure class="project-preview project-preview-map"><img src="pic/projects/logistics.jpg" alt="Logistics Forecasting: Demand forecasts and NYC taxi-zone map" width="720" height="450" loading="lazy" decoding="async" /></figure>
             <div class="project-content">
               <h3>Logistics Forecasting</h3>
               <p class="project-subtitle">Demand & ETA Forecasting Demo</p>
@@ -166,7 +172,7 @@
             </div>
           </div><!-- Project: Quasar -->
           <div class="project-card" data-featured="true" data-category="genai">
-            <figure class="project-preview"><img src="pic/projects/quasar.png" alt="Quasar: Streaming chat and source-aware developer workspace" width="720" height="450" loading="lazy" decoding="async" /><figcaption>Repository screenshot</figcaption></figure>
+            <figure class="project-preview"><img src="pic/projects/quasar.png" alt="Quasar: Streaming chat and source-aware developer workspace" width="720" height="450" loading="lazy" decoding="async" /></figure>
             <div class="project-content">
               <h3>Quasar</h3>
               <p class="project-subtitle">Full-Stack AI Developer Workspace</p>
@@ -186,7 +192,7 @@
             </div>
           </div><!-- Project: Job Finder AI -->
           <div class="project-card" data-featured="true" data-category="genai">
-            <figure class="project-preview"><img src="pic/projects/job-finder.jpg" alt="Job Finder AI: AI application preparation tools" width="720" height="450" loading="lazy" decoding="async" /><figcaption>Repository screenshot</figcaption></figure>
+            <figure class="project-preview"><img src="pic/projects/job-finder.jpg" alt="Job Finder AI: AI application preparation tools" width="720" height="450" loading="lazy" decoding="async" /></figure>
             <div class="project-content">
               <h3>Job Finder AI</h3>
               <p class="project-subtitle">AI-powered Job Platform</p>
@@ -206,7 +212,7 @@
             </div>
           </div><!-- Project 2: AI Academic Mentor -->
           <div class="project-card" data-featured="true" data-category="genai">
-            <figure class="project-preview"><img src="pic/projects/academic-mentor.jpg" alt="AI Academic Mentor: Student outcome dashboard" width="720" height="450" loading="lazy" decoding="async" /><figcaption>Repository screenshot</figcaption></figure>
+            <figure class="project-preview project-preview-dashboard"><img src="pic/projects/academic-mentor.jpg" alt="AI Academic Mentor: Student outcome dashboard" width="720" height="450" loading="lazy" decoding="async" /></figure>
             <div class="project-content">
               <h3>AI Academic Mentor</h3>
               <p class="project-subtitle">LangGraph & RAG Architecture</p>

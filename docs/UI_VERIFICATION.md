@@ -4,8 +4,9 @@ This revision targets the portfolio served at **khuzaimahassan.me**. Hosting set
 
 ## Layout and navigation
 
-- Short introduction with Work and Resume actions before the portrait on small screens.
+- Compact portrait beside the name and availability at the top on phones/tablets, using the existing headshot. Desktop retains the larger portrait beside the introduction. Work and Resume remain visible near the top on portrait phones.
 - Order: introduction, selected projects, experience, about/skills, education, credentials, contact.
+- Project image overlays are removed; image framing emphasizes the map and dashboard metrics.
 - Four featured projects initially; All and category filters keep all ten projects accessible.
 - Compact navigation, a 46 × 46 px mobile menu button, visible focus indicators, and a skip link.
 - All core sections are visible by default. No section visibility depends on an IntersectionObserver threshold or preloader.
@@ -44,6 +45,12 @@ Additional checks:
 - Browser console had no errors or warnings during the checked flow.
 
 These are browser viewport checks, not physical-device or multi-browser certification. The contact provider's real delivery was not tested; automated tests use a mail stub.
+
+## Portrait and image framing follow-up
+
+The compact headshot uses the existing `pic/profile.png` on widths through 860 px and sits beside the name/availability above the headline. Wider layouts retain `pic/profile1.png` beside the hero text. Raw image files are unchanged. Project screenshots have no overlaid source labels; their provenance remains in the asset documentation. The map is framed from its lower region and the mentor dashboard from its center.
+
+Rechecked the hero at 320×568, 360×640, 390×844, 414×896, 640×800, 768×1024, 844×390, 860×800, 862×800, 1024×768, 1440×900 and 1920×1080. No horizontal overflow or out-of-bounds hero text was found, and portrait phone actions remained in the opening screen. All ten projects were additionally checked at eight sizes, including 1280×800; no out-of-bounds text or image labels were found.
 
 ## Automated checks
 
