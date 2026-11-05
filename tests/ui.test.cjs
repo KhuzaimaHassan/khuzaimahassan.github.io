@@ -24,7 +24,7 @@ class Element {
   async emit(name, event = {}) { for (const callback of this.events[name] || []) await callback(event); }
 }
 
-function setup(sender = () => Promise.resolve()) {
+function setup(sender = () => Promise.resolve(), videoMode = null) {
   const header = new Element(), menu = new Element(), hamburger = new Element(), logo = new Element();
   hamburger.attrs['aria-expanded'] = 'false';
   const links = ['projects', 'experience', 'about', 'contact'].map(id => {
@@ -45,18 +45,66 @@ function setup(sender = () => Promise.resolve()) {
   form.querySelector = () => submit;
   const sections = Object.fromEntries(links.map((link, i) => [link.attrs.href, { id: link.attrs.href.slice(1), top: 600 + i * 1000, getBoundingClientRect() { return { top: this.top }; } }]));
   const document = new Element(); document.body = new Element();
+  const dialog = new Element(), video = new Element(), videoClose = new Element(), videoStatus = new Element(), external = new Element(), watch = new Element();
+  dialog.id = 'project-video-dialog'; dialog.open = false;
+  if (videoMode !== 'unsupported') dialog.showModal = () => { dialog.open = true; };
+  dialog.close = () => { dialog.open = false; return dialog.emit('close'); };
+  dialog.getBoundingClientRect = () => ({ left: 20, right: 700, top: 20, bottom: 400 });
+  video.pauseCount = 0; video.loadCount = 0;
+  video.pause = () => video.pauseCount++; video.load = () => video.loadCount++;
+  watch.href = 'https://portfolio.example/media/quasar-walkthrough.mp4';
+  const videoElements = videoMode ? { 'project-video-dialog': dialog, 'project-video': video, 'project-video-close': videoClose, 'project-video-status': videoStatus, 'project-video-external': external } : {};
   const lookup = { '.hamburger': hamburger, '.nav-menu': menu, '.logo a': logo, ...sections };
   document.querySelector = selector => lookup[selector];
-  document.querySelectorAll = selector => ({ '.nav-link': links, '.filter-btn': filters, '.project-card': cards })[selector] || [];
-  document.getElementById = id => ({ header, 'project-status': status, 'view-all-projects': viewAll, contactForm: form, 'contact-status': contactStatus })[id];
+  document.querySelectorAll = selector => ({ '.nav-link': links, '.filter-btn': filters, '.project-card': cards, '[data-project-video]': videoMode ? [watch] : [] })[selector] || [];
+  document.getElementById = id => ({ header, 'project-status': status, 'view-all-projects': viewAll, contactForm: form, 'contact-status': contactStatus, ...videoElements })[id];
   const media = new Element();
   const window = new Element(); window.innerHeight = 800; window.matchMedia = () => media;
   window.requestAnimationFrame = callback => callback();
   const context = { document, window, console: { error() {} } };
   if (sender !== null) context.emailjs = { sendForm: sender };
   vm.runInNewContext(script, context);
-  return { header, menu, hamburger, links, filters, cards, status, viewAll, form, contactStatus, submit, document, window, media, sections };
+  return { header, menu, hamburger, links, filters, cards, status, viewAll, form, contactStatus, submit, document, window, media, sections, dialog, video, videoClose, videoStatus, external, watch };
 }
+
+test('walkthrough loads only on normal activation and closing releases media and restores focus', async () => {
+  const ui = setup(undefined, 'supported'); let prevented = false;
+  assert.equal(ui.video.getAttribute('src'), null);
+  await ui.watch.emit('click', { button: 0, preventDefault() { prevented = true; } });
+  assert.equal(prevented, true); assert.equal(ui.dialog.open, true);
+  assert.equal(ui.video.getAttribute('src'), ui.watch.href);
+  assert.equal(ui.videoClose.focused, true);
+  assert.equal(ui.document.body.classList.contains('video-modal-open'), true);
+  await ui.videoClose.emit('click');
+  assert.equal(ui.dialog.open, false); assert.equal(ui.video.getAttribute('src'), null);
+  assert.equal(ui.video.pauseCount, 1); assert.equal(ui.video.loadCount, 1);
+  assert.equal(ui.document.body.classList.contains('video-modal-open'), false);
+  assert.equal(ui.watch.focused, true);
+});
+
+test('modified clicks and unsupported dialogs retain the ordinary video link', async () => {
+  const ui = setup(undefined, 'supported');
+  for (const event of [{ button: 1 }, { button: 0, ctrlKey: true }, { button: 0, metaKey: true }, { button: 0, shiftKey: true }, { button: 0, altKey: true }]) {
+    await ui.watch.emit('click', { ...event, preventDefault() { assert.fail('must preserve normal link navigation'); } });
+    assert.equal(ui.dialog.open, false);
+  }
+  const fallback = setup(undefined, 'unsupported');
+  await fallback.watch.emit('click', { button: 0, preventDefault() { assert.fail('must preserve fallback'); } });
+  assert.equal(fallback.watch.getAttribute('aria-haspopup'), null);
+});
+
+test('backdrop closes only outside the dialog; errors offer fallback and external playback pauses inline video', async () => {
+  const ui = setup(undefined, 'supported');
+  await ui.watch.emit('click', { button: 0, preventDefault() {} });
+  await ui.video.emit('error'); assert.equal(ui.videoStatus.hidden, false);
+  await ui.external.emit('click'); assert.equal(ui.video.pauseCount, 1);
+  await ui.dialog.emit('click', { target: ui.dialog, clientX: 100, clientY: 100 });
+  assert.equal(ui.dialog.open, true);
+  await ui.dialog.emit('click', { target: ui.dialog, clientX: 10, clientY: 10 });
+  assert.equal(ui.dialog.open, false);
+  await ui.watch.emit('click', { button: 0, preventDefault() {} });
+  assert.equal(ui.videoStatus.hidden, true);
+});
 
 test('featured starts with four cards; every category and All remains reachable', async () => {
   const ui = setup();

@@ -22,6 +22,8 @@ Project filters cover Featured, All, MLOps, Generative AI, Machine Learning, and
 
 See [UI verification](docs/UI_VERIFICATION.md) for the responsive checks and functional test command. The [project screenshot provenance](pic/projects/README.md) identifies the original captures; these are static repository images, rather than a live status feed.
 
+Quasar's **Watch walkthrough** link opens an in-page video player with native playback/fullscreen controls, an **Open in new tab** option, and a text transcript. The 2:31 video uses the supplied narration, captions, slides, and real document-workflow captures. Its 6 MB MP4 loads only when opened; without JavaScript or native dialog support, the link opens the video directly. See [media notes](media/README.md) for scope and replacement instructions.
+
 ## Projects shown on the site
 
 | Project | Implemented scope |
@@ -79,6 +81,7 @@ It uses port 8000, so run one preview server at a time. The Python command is th
 index.html          Main page and all portfolio sections
 styles.css          Plain CSS, responsive layout and animation styles
 script.js           Navigation, filters, animations and EmailJS submission
+media/              Quasar walkthrough MP4, transcript and media notes
 pic/                Profile and project screenshots
 CV/                 Resume PDFs; index.html selects the download
 about.html          Legacy redirect to the hosted #about section
