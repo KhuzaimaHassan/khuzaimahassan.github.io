@@ -64,6 +64,52 @@ viewAll?.addEventListener('click', () => {
   filterButtons.find(button => button.dataset.filter === 'all')?.focus();
 });
 
+// The normal link remains a new-tab fallback when native dialogs are unavailable.
+const videoDialog = document.getElementById('project-video-dialog');
+const projectVideo = document.getElementById('project-video');
+const videoClose = document.getElementById('project-video-close');
+const videoStatus = document.getElementById('project-video-status');
+const videoExternal = document.getElementById('project-video-external');
+if (videoDialog && projectVideo && videoClose && typeof videoDialog.showModal === 'function') {
+  let videoOpener = null;
+  document.querySelectorAll('[data-project-video]').forEach(link => {
+    link.setAttribute('aria-haspopup', 'dialog');
+    link.setAttribute('aria-controls', videoDialog.id);
+    link.addEventListener('click', event => {
+      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      if (videoDialog.open) {
+        event.preventDefault();
+        return;
+      }
+      videoDialog.showModal();
+      event.preventDefault();
+      videoOpener = link;
+      document.body.classList.add('video-modal-open');
+      if (videoStatus) videoStatus.hidden = true;
+      projectVideo.setAttribute('src', link.href);
+      videoClose.focus();
+    });
+  });
+  videoClose.addEventListener('click', () => videoDialog.close());
+  videoDialog.addEventListener('click', event => {
+    if (event.target !== videoDialog) return;
+    const bounds = videoDialog.getBoundingClientRect();
+    const outside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+    if (outside) videoDialog.close();
+  });
+  videoDialog.addEventListener('close', () => {
+    projectVideo.pause();
+    projectVideo.removeAttribute('src');
+    projectVideo.load();
+    document.body.classList.remove('video-modal-open');
+    videoOpener?.focus({ preventScroll: true });
+  });
+  videoExternal?.addEventListener('click', () => projectVideo.pause());
+  projectVideo.addEventListener('error', () => {
+    if (videoStatus && videoDialog.open) videoStatus.hidden = false;
+  });
+}
+
 // Only highlight navigation; observation never controls content visibility.
 const linkedSections = navLinks.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
 let scrollUpdatePending = false;

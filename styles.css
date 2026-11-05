@@ -99,6 +99,24 @@ header { position: fixed; z-index: 1000; inset: 0 0 auto; background: rgba(255, 
 .project-tags { margin-top: 20px; }
 .project-tags span, .timeline-tags span, .skill-tags span { padding: 4px 9px; border-radius: 6px; background: #f1f4fa; color: #43526b; font-size: .69rem; font-weight: 500; }
 .project-links { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 22px; margin-top: auto; }
+.video-modal { width: min(1080px, calc(100% - 32px)); max-height: calc(100dvh - 32px); margin: auto; padding: 0; overflow: auto; border: 1px solid var(--border-color); border-radius: 18px; background: white; color: var(--text-color); box-shadow: 0 24px 90px rgba(0, 0, 0, .28); }
+.video-modal::backdrop { background: rgba(9, 17, 33, .76); backdrop-filter: blur(5px); }
+.video-modal__header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; }
+.video-modal__header h2 { font-size: clamp(1.12rem, 3vw, 1.4rem); letter-spacing: -.025em; }
+.video-modal__header p { margin-top: 4px; color: var(--text-muted); font-size: .8rem; }
+.video-modal__close { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 44px; width: 44px; height: 44px; padding: 0; border: 1px solid var(--border-color); border-radius: 10px; color: var(--dark-color); background: white; font-size: 1.7rem; line-height: 1; }
+.video-modal__close:hover { border-color: var(--primary-color); background: #eef2ff; color: var(--primary-dark); }
+.video-modal__player { display: block; width: 100%; height: auto; max-height: max(140px, calc(100dvh - 210px)); aspect-ratio: 16 / 9; object-fit: contain; background: #070e1c; }
+.video-modal__footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding: 12px 24px; font-size: .8rem; }
+.video-modal__footer a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; }
+.video-modal__status { padding: 16px 24px 0; font-size: .85rem; }
+body.video-modal-open { overflow: hidden; }
+@media (max-width: 480px) {
+  .video-modal__header { padding: 16px; }
+  .video-modal__header p { max-width: 26ch; }
+  .video-modal__footer { padding: 8px 16px; gap: 4px 20px; }
+  .video-modal__status { padding-inline: 16px; }
+}
 .project-footer { margin-top: 32px; display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
 .project-footer p { flex: 1; min-width: min(260px, 100%); max-width: 60ch; color: var(--text-muted); font-size: .76rem; }
 #view-all-projects { display: none; }

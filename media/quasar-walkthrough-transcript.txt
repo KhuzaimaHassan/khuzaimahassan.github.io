@@ -1,0 +1,17 @@
+Quasar walkthrough
+
+Hi, I'm Khuzaima Hassan. This is Quasar, an AI developer workspace that connects chat with project documents. I'll show one complete workflow.
+
+Imagine a teammate asks about an import API. The answer lives in a project brief. I want to find the rules and check the source.
+
+I open Documents and upload a short sample brief. Quasar tracks the file through processing until it's ready. Behind that status, the backend extracts the text, splits it into chunks, and stores embeddings for retrieval. I'll wait for the ready state before asking a question.
+
+Now I ask about the upload limit, retention period, and retry behavior. The answer gives ten megabytes, seven days, and a fifteen-second delay after a rate-limit error. I open the referenced file and compare those details with the brief. That source check is the important part.
+
+The document path runs through a Python FastAPI service. It parses PDF or DOCX files, chunks the text, creates embeddings, and stores them in PostgreSQL with pgvector. The original file stays in Supabase Storage. This separates ingestion work from the Next.js interface.
+
+For a question, retrieval stays inside the current workspace and uses documents marked ready. Vector similarity finds candidate passages. BM25 scores those candidates, and reciprocal rank fusion combines the rankings. Next.js adds the selected context to the model request and streams the response.
+
+One engineering tradeoff is the retrieval timeout. If that service is unavailable, chat can continue without document context, so an uncited answer isn't evidence that retrieval worked. The project also includes agent workflows that pause for approval before file writes.
+
+Quasar connects the interface and AI backend around an inspectable workflow. The project source and architecture notes are linked below.

@@ -7,13 +7,17 @@ const MIME_TYPES = {
   '.html': 'text/html',
   '.css': 'text/css',
   '.js': 'text/javascript',
+  '.mp4': 'video/mp4',
+  '.txt': 'text/plain; charset=utf-8',
+  '.pdf': 'application/pdf',
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.svg': 'image/svg+xml'
 };
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+  const pathname = new URL(req.url, 'http://localhost').pathname;
+  let filePath = path.join(__dirname, pathname === '/' ? 'index.html' : pathname);
   const extname = path.extname(filePath);
   let contentType = MIME_TYPES[extname] || 'text/plain';
 

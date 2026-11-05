@@ -61,8 +61,22 @@ node --check script.js
 node --test tests/ui.test.cjs
 ```
 
-The eight tests cover filter reachability, View All focus, menu closing paths, navigation highlighting, preserved EmailJS routing, successful and failed contact requests, missing SDK fallback, and duplicate-submit prevention. No package installation or real email is required.
+The eleven tests cover filter reachability, View All focus, menu closing paths, navigation highlighting, preserved EmailJS routing, successful and failed contact requests, missing SDK fallback, duplicate-submit prevention, and video activation/cleanup/fallback behavior. No package installation or real email is required.
 
 The existing EmailJS service, template, public key, form field contract, contact address, CV path, and chat account are retained. Submission now has inline status and a disabled in-flight button; failures preserve the entered message and offer direct email.
 
 Screenshot provenance is recorded in [pic/projects/README.md](../pic/projects/README.md).
+
+## Quasar walkthrough follow-up — November 5, 2026
+
+Checked the local review branch in the in-app Chromium browser at 320×568, 390×844, 768×1024, 844×390 and 1280×720. The dialog remained inside the viewport with no horizontal document overflow; the short landscape layout kept the header, player and footer visible. These are browser viewport checks, not physical-device testing.
+
+- The video has no `src` before opening, uses `preload="none"`, and does not autoplay.
+- Clicking Watch walkthrough opens the modal and focuses its close button. Native playback was exercised on desktop and a 390 px phone viewport; the player reports a 151.23-second duration.
+- Escape and the close button stop playback, remove the media source, restore scrolling, and return focus to Watch walkthrough.
+- Open in new tab reaches the standalone MP4 player; Read transcript reaches the complete spoken text. Native controls expose fullscreen playback.
+- Featured / All filtering and the mobile navigation toggle/Escape remain functional after using the video.
+- Automated tests additionally cover modified-click and unsupported-dialog fallbacks, backdrop bounds, media errors, and pausing inline playback when opening the separate player.
+- The optional Node preview server now ignores cache query strings and serves MP4, transcript and PDF files with the correct content types. Its request handler was checked against the actual HTML, CSS, JavaScript, video, transcript and resume assets without opening another port.
+
+The final MP4 also passed a full video/audio decode, contains all eight supplied narration files in order at normal speed, and has no clipped audio peaks. This walkthrough covers documents, source checking and architecture; it does not include a successful agent execution demo.

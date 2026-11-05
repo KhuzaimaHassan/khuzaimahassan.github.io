@@ -38,7 +38,7 @@
     </script>
     <!-- Placeholder for favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>KH</text></svg>">
-    <link rel="stylesheet" href="styles.css?v=4.2" />
+    <link rel="stylesheet" href="styles.css?v=4.3" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -185,7 +185,8 @@
                 <span>pgvector</span>
               </div>
               <div class="project-links">
-                <a href="https://qausar.vercel.app" class="btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="media/quasar-walkthrough.mp4" class="btn-small" data-project-video target="_blank" rel="noopener noreferrer" aria-label="Watch Quasar walkthrough"><i class="fas fa-play" aria-hidden="true"></i> Watch walkthrough</a>
+                <a href="https://qausar.vercel.app" class="btn-small btn-secondary-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                 <a href="https://github.com/KhuzaimaHassan/Quasar" class="btn-small btn-secondary-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source</a>
               </div>
             </div>
@@ -762,7 +763,27 @@
       </div>
     </footer>
 
-    <script src="script.js?v=4.0"></script>
+    <dialog class="video-modal" id="project-video-dialog" aria-labelledby="project-video-title" aria-describedby="project-video-description">
+      <div class="video-modal__content">
+        <div class="video-modal__header">
+          <div>
+            <h2 id="project-video-title">Quasar walkthrough</h2>
+            <p id="project-video-description">Document questions, source checks, and architecture.</p>
+          </div>
+          <button class="video-modal__close" id="project-video-close" type="button" aria-label="Close walkthrough" autofocus><span aria-hidden="true">&times;</span></button>
+        </div>
+        <video id="project-video" class="video-modal__player" width="1920" height="1080" controls playsinline preload="none" poster="pic/projects/quasar-walkthrough-cover.png" aria-label="Quasar project walkthrough with captions">
+          Your browser does not support embedded video. <a href="media/quasar-walkthrough.mp4" target="_blank" rel="noopener noreferrer">Open the walkthrough in a new tab</a>.
+        </video>
+        <p class="video-modal__status" id="project-video-status" role="status" hidden>The video could not load. Use the new-tab link or read the transcript below.</p>
+        <div class="video-modal__footer">
+          <a id="project-video-external" href="media/quasar-walkthrough.mp4" target="_blank" rel="noopener noreferrer">Open in new tab <span aria-hidden="true">↗</span></a>
+          <a href="media/quasar-walkthrough-transcript.txt" target="_blank" rel="noopener noreferrer">Read transcript</a>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js?v=4.1"></script>
     <script src="https://qualzo.app/widget.js" data-user="cms5zwtpl0532jqymgqnmp3t4"></script>
   </body>
 </html>
